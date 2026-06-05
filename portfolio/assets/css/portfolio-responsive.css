@@ -1,0 +1,75 @@
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+    .m-up {
+        margin-top: -205px;
+        margin-bottom: 0;
+    }
+    .ellipse-bg {
+        width: 450px;              /* Width of the circle */
+        height: 450px;             /* Height of the circle */
+        background-color: #D1DFFD; /* Background color */
+        border-radius: 50%;     
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .content-box {
+        position: absolute;
+        bottom: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+        transition: all 0.3s linear;
+    }
+    
+.logo-image {
+    width: 25%;
+}
+.content-image {
+    width: 34%;
+}
+    .ellipse:hover .content-box {
+        bottom: 35%;
+    }
+    .ellipse:hover .content-image {
+        top: 90%;
+    }
+    .csd{
+        margin-top:0px !important;
+    }
+}
+@media only screen and (max-width: 400px) {
+.m-up {
+    margin-top: -95px;
+    margin-bottom: 0;
+}
+.ellipse-bg {
+    width: 350px;              /* Width of the circle */
+    height: 350px;             /* Height of the circle */
+    background-color: #D1DFFD; /* Background color */
+    border-radius: 50%;     
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.content-box {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    transition: all 0.3s linear;
+}
+.ellipse:hover .content-box {
+    bottom: 35%;
+}
+.ellipse:hover .content-image {
+    top: 90%;
+}
+.csd{
+    margin-top:0px !important;
+}
+}

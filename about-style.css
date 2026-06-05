@@ -1,0 +1,123 @@
+.text-justify{
+    text-align: justify;
+}
+.banner-bg{
+    background-color: #f4f8ff;
+}
+.banner-text{
+    margin-top: -150px;
+}
+.banner-gs-btn{
+    background-color: #e81b24;
+    color:white;
+    border-radius: 20px;
+    padding:5px 10px;
+    border:none;
+}
+
+/* Section-2 */
+/* Section-2 */
+/* Section-2 */
+/* Section-2 */
+/* Section-2 */
+/* Section-2 */
+/* Section-2 */
+
+.our-story{
+    background: url('./assets/About/Rectangle 139.png');
+    padding: 460px 30px 30px 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.our-story p:nth-child(1){
+    font-size: 100px;
+}
+
+/* Section-3 */
+/* Section-3 */
+/* Section-3 */
+/* Section-3 */
+/* Section-3 */
+/* Section-3 */
+/* Section-3 */
+
+.ddd{
+    color: #FF6309;
+    font-size: 18px;
+}
+
+/* Section-4 */
+/* Section-4 */
+/* Section-4 */
+/* Section-4 */
+/* Section-4 */
+/* Section-4 */
+/* Section-4 */
+.why-choose-us{
+    background-color: #BEFFB4;
+}
+.star-icon{
+    height:25px;
+    width:25px;
+}
+.f-15{
+    font-size:15px;
+}
+
+/* Section-5 */
+/* Section-5 */
+/* Section-5 */
+/* Section-5 */
+/* Section-5 */
+/* Section-5 */
+/* Section-5 */
+.owl-theme .owl-nav [class*=owl-]{
+    background: rgb(230, 43, 43) !important;
+    border-radius: 30px !important;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    padding: 0px 4px !important;
+}
+.owl-dots{
+    display: none !important;
+}
+/* Section-6 */
+/* Section-6 */
+/* Section-6 */
+/* Section-6 */
+/* Section-6 */
+/* Section-6 */
+/* Section-6 */
+.recent-reviews{
+    background-color: #f6f6f6;
+}
+
+.recent-reviews .card{
+    border-radius: 10px 10px 50px 10px;
+    border: none;
+    box-shadow:0px 0px 3px rgba(0, 0, 0, 0.116);
+}
+.p-marg-0 p{
+    margin: 0;
+}
+.owl-carousel .card{
+    height:390px;
+}
+/* Section-7 */
+/* Section-7 */
+/* Section-7 */
+/* Section-7 */
+/* Section-7 */
+/* Section-7 */
+/* Section-7 */
+
+input.form-control.mt-3.bg-grey{
+    border-radius: 10px;
+    border: none;
+    background: #f5f5f5;
+}
+input.btn-danger{
+    border-radius: 30px;
+    border: none;
+}

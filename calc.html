@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReGenF Calc</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <form id="priceCalcForm">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="productPrice">Product Price</label>
+                    <input type="number" class="form-control" id="productPrice" placeholder="Enter price" value="40000">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="yearsOfUsage">Years of Usage</label>
+                    <select class="form-control" id="yearsOfUsage">
+                        <option value="1">≤5</option>
+                        <option value="2">>5</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="condition">Condition</label>
+                    <select class="form-control" id="condition">
+                        <option value="1">Perfect</option>
+                        <option value="2">Fair</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="serviceNeeded">Service Needed</label>
+                    <select class="form-control" id="serviceNeeded">
+                        <option value="1">No</option>
+                        <option value="2">Yes</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="floor">Floor</label>
+                    <select class="form-control" id="floor">
+                        <option value="1">Ground</option>
+                        <option value="2">Not Ground</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="seaterCount">Seater Count</label>
+                    <input type="number" class="form-control" id="seaterCount" placeholder="Enter seater count" value="1">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="pattern">Pattern</label>
+                    <select class="form-control" id="pattern">
+                        <option value="1">Wood</option>
+                        <option value="2">Fabric</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="dismantled">Dismantled</label>
+                    <select class="form-control" id="dismantled">
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4 d-flex align-items-end">
+                    <button type="button" class="btn btn-primary w-100" onclick="calculateFinalPrice()">Calculate</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="mt-3">
+            <h5>Final Price: <span id="finalPrice"></span></h5>
+        </div>
+    </div>
+
+    <script>
+        function calculateFinalPrice() {
+    const productPrice = parseFloat(document.getElementById('productPrice').value);
+    const yearsOfUsage = parseInt(document.getElementById('yearsOfUsage').value);
+    
+    // Get the selected values from the dropdown inputs
+    const conditionValue = document.getElementById('condition').value;
+    const serviceNeededValue = document.getElementById('serviceNeeded').value;
+    const floorValue = document.getElementById('floor').value;
+    
+    // Set the variable values based on the dropdown inputs
+    let condition = 0;
+    let serviceNeeded = 0;
+    let floor = 0;
+
+    // Condition based on dropdown values
+    if (conditionValue === '1') {
+        condition = 1; // Perfect
+    } else if (conditionValue === '2') {
+        condition = 2; // Fair
+    }
+
+    // Service Needed based on dropdown values
+    if (serviceNeededValue === '1') {
+        serviceNeeded = 1; // No
+    } else if (serviceNeededValue === '2') {
+        serviceNeeded = 2; // Yes
+    }
+
+    // Floor based on dropdown values
+    if (floorValue === '1') {
+        floor = 1; // Ground
+    } else if (floorValue === '2') {
+        floor = 2; // Not Ground
+    }
+
+    let deduction = 0;
+
+    // Calculate deduction based on product price ranges
+    if (productPrice < 5000) {
+        deduction = productPrice - (yearsOfUsage * 1000) - (condition * 300) - (serviceNeeded * 300) - (floor * 1000);
+    } else if (productPrice <= 10000) {
+        deduction = productPrice - (yearsOfUsage * 2000) - (condition * 500) - (serviceNeeded * 500) - (floor * 2000);
+    } else if (productPrice <= 20000) {
+        deduction = productPrice - (yearsOfUsage * 4000) - (condition * 1000) - (serviceNeeded * 1000) - (floor * 3000);
+    } else if (productPrice <= 30000) {
+        deduction = productPrice - (yearsOfUsage * 8000) - (condition * 2000) - (serviceNeeded * 2000) - (floor * 1000);
+    } else if (productPrice <= 40000) {
+        deduction = productPrice - (yearsOfUsage * 10000) - (condition * 3000) - (serviceNeeded * 3000) - (floor * 2000);
+    } else if (productPrice <= 50000) {
+        deduction = productPrice - (yearsOfUsage * 12000) - (condition * 4000) - (serviceNeeded * 4000) - (floor * 3000);
+    } else {
+        deduction = productPrice - (yearsOfUsage * 40000) - (condition * 5000) - (serviceNeeded * 5000) - (floor * 5000);
+    }
+
+    const finalPrice = productPrice - deduction;
+    document.getElementById('finalPrice').innerText = finalPrice.toFixed(2);
+}
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

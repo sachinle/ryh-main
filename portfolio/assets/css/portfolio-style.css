@@ -1,0 +1,163 @@
+.m-up{
+    margin-top:-400px;
+    margin-bottom:80px;
+}
+.ellipse-bg {
+    width: 430px;              /* Width of the circle */
+    height: 430px;             /* Height of the circle */
+    background-color: #D1DFFD; /* Background color */
+    border-radius: 50%;     
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.logo-image {
+    width: 30%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.content-image {
+    width: 40%;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: all 0.3s linear;
+}
+
+.content-box {
+    position: absolute;
+    bottom: -80px;  /* Start off the view */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    transition: all 0.3s linear;
+}
+
+.ellipse:hover .content-image {
+    top: 85%;
+}
+
+.ellipse:hover .content-box {
+    bottom: 40%;
+}
+
+.rps-bg{
+    background-color: #a2ff94;
+}
+
+.csd{
+    margin-top:150px !important;
+}
+.c-1{
+    background-color:#EC008C;
+    border-radius: 5px;
+}
+.c-2{
+    background-color:#A6CE39;
+    border-radius: 5px;
+}
+.c-3{
+    background-color:#FDB813;
+    border-radius: 5px;
+}
+p.text-center.fs-6.m-0{
+    padding:50px 30px;
+}
+.rps-mock{
+    scale:1.08;
+}
+.results-text{
+    color:#f2f2f2;
+    margin-bottom:-30px;
+}
+.green-bg{
+    background-color: #B9FFAF;
+    border-radius: 5px;
+}
+
+.sahana-bg{
+    background-color: #FFCFB4;
+}
+.orange-bg{
+    background-color: #FFCFB4;
+    border-radius: 5px;
+}
+.sahana-c{
+    padding-left: 5px;
+    border-left: 3px solid #FF009A;
+}
+
+.statergy-box{
+    border:2px solid #FFCFB4;
+    border-radius: 10px;
+    background-color:#fafafa;
+}
+.education-bg {
+    background-image: url('../Education\ Sector.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.blue-font{
+    color:#1758B9;
+}
+.cyan-font{
+    color:#20a39f;
+}
+
+.hospital-bg {
+    background-image: url('../A@4x\ 1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #20a39f;
+}
+.mobile-bg{
+    background-image: url('../App\ Dev\ Sector.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.green-font{
+    color: #43AB24;
+}
+.fs-11{
+    font-size:11px;
+}
+.fs-13{
+    font-size:13px;
+}
+
+.bg-f6-grey{
+    background-color: #F6F6F6;
+    border-radius: 10px;
+}
+table{
+    background-color: #FCFCFC;
+}
+table .bdr-right{
+    border-right :1px solid #E2E2E2 !important;
+    border-bottom:1px solid #E2E2E2 !important;
+}
+table .bdr-left{
+    border-left :1px solid #E2E2E2 !important;
+    border-bottom:1px solid #E2E2E2 !important;
+}
+.health-care{
+    width:35%;
+}
+.regenf-p{
+    width:20% !important;
+}

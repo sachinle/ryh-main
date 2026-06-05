@@ -1,0 +1,87 @@
+/* HEADER STARTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+header{
+    background: rgba(255, 255, 255, 0.50);
+}
+.f-14{
+    font-size:14px !important;
+}
+.f-12{
+    font-size:12px !important;
+}
+.f-16{
+    font-size:16px !important;
+    line-height: 27px;
+}
+
+.fw-500{
+    font-weight: 500 !important;
+}
+.lh{
+    line-height: 35px;
+}
+.nav-btns{
+    border-radius:0;
+}
+.nav-btns:hover{
+    transition: all 0.2s;
+    color: #E61B24;
+    border-bottom: 1px solid #E61B24 ;
+}
+.git{
+    border:2px #E61B24 solid;
+    width: 180px;
+}
+.git:hover{
+    background-color: #E61B24;
+    color: white;
+}
+.banner{
+    background: url("./assets/Group-20014.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* HEADER ENDS */
+
+/* FOOTER STARTS */
+.foot-bullet{
+    height: 35px;
+    width: 35px;
+}
+.foot-bullet-2{
+font-size: 20px;
+color: #e81e27;
+padding-right: 10px;
+}
+.foot-img{
+    height: 320px;
+}
+.foot-visible{
+    top:60%;
+    left:22%;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.brochure{
+    width:140px;
+    font-weight: 500;
+    font-size: 17px;
+}
+.foot-hover:hover .foot-visible{
+    top:38%;
+    opacity: 1;
+}
+.view{
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    width: 100px;
+    font-size: 17px;
+    margin: auto
+}
+/* FOOTER END */

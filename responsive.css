@@ -1,0 +1,522 @@
+/* --------------------------------TAB VIEW----------------------------------*/
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+    .banner-buttons {
+    margin-top: -60px;
+    margin-bottom: 10px;
+}
+  section {
+    overflow-x: hidden !important;
+  }
+
+ 
+  .banner {
+    display: none;
+  }
+
+  .banner-sm {
+    display: block;
+  }
+  ul.navbar-nav li.p-3 {
+    padding: 0 !important;
+  }
+
+  button.btn.nav-btns.fw-normal {
+    font-size: 15px;
+    padding: 0 20px;
+  }
+
+  a.navbar-brand {
+    width: 10%;
+  }
+
+  img.logo {
+    width: 100px;
+  }
+
+  ul.navbar-nav.mx-auto {
+    margin-right: 0 !important;
+    margin-left: 30px !important;
+  }
+
+  .git {
+    width: 80px;
+    font-size: 10px !important;
+    padding: 0 5px !important;
+  }
+
+  .btn.nav-btns {
+    padding: 0 5px;
+  }
+
+  /* NAVIGATION BAR END*/
+
+  /* ------------------------------------------------------------------ */
+
+  /* SECTION-2 (Circle Design)*/
+  /* .c-design{
+        display:none;
+    } */
+
+  .max-size {
+    padding: 5px;
+    height: fit-content;
+    width: 100%;
+    box-shadow: #830000 0px -30px 150px 100px inset;
+  }
+
+  /* SECTION-2 (Circle Design) END*/
+
+  /* ------------------------------------------------------------------ */
+
+  /* SECTION-3 (Our Services)*/
+
+  .myCard {
+    height: 400px;
+    width: 80%;
+  }
+
+  .scaled-card {
+    transform: scale(1.2);
+    margin: 100px 0;
+    padding: 50px 0;
+  }
+
+  .sticky-column {
+    top: 200px;
+  }
+
+  /* ------------------------------------------------------------------ */
+
+  /* SECTION-4 (Number of client speaks)*/
+
+  .lg-responsive {
+    display: none;
+  }
+
+  /* SECTION-4 (Number of client speaks) END*/
+
+  /*FORM SECTION*/
+  .my-form {
+    display: none;
+  }
+
+  .my-form-mb {
+    display: block;
+    background-image: radial-gradient(
+      circle at top right,
+      rgb(255, 106, 106) 0%,
+      rgb(255, 106, 106) 14.286%,
+      rgb(255, 106, 106) 14.286%,
+      rgb(255, 106, 106) 28.572%,
+      rgb(255, 106, 106) 28.572%,
+      rgb(255, 106, 106) 42.858%,
+      rgb(255, 106, 106) 42.858%,
+      rgb(255, 106, 106) 57.144%,
+      rgb(255, 106, 106) 57.144%,
+      rgb(255, 106, 106) 71.43%,
+      rgb(179, 48, 48) 71.43%,
+      rgb(179, 48, 48) 85.716%,
+      rgb(172, 36, 36) 85.716%,
+      rgb(172, 36, 36) 100.002%
+    );
+    padding: 30px;
+    margin: 0 100px;
+    border-radius: 50px;
+  }
+
+  /* ------------------------------------------------------------------ */
+}
+
+/* --------------------------------MOBILE VIEW----------------------------------*/
+
+@media only screen and (max-width: 400px) {
+  
+  section {
+    overflow-x: hidden !important;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .banner-sm {
+    display: block;
+  }
+
+  .navbar-nav .p-3 {
+    padding: 0 !important;
+  }
+
+  /* NAVIGATION BAR END*/
+  ul.navbar-nav.mx-auto {
+    text-align: right;
+  }
+
+  .btn.nav-btns {
+    font-size: 13px;
+  }
+
+  img.logo {
+    width: 100px;
+  }
+
+  /* .navbar {
+    width: 320px !important;
+  } */
+
+  .git {
+    display: none;
+  }
+
+  /* NAVIGATION BAR END*/
+
+  /* ------------------------------------------------------------------ */
+
+  /* SECTION-2 (Circle Design)*/
+  .c-design {
+    display: none;
+  }
+
+  .c-design-md {
+    display: block;
+  }
+
+  /* SECTION-2 (Circle Design) END*/
+
+  /* ------------------------------------------------------------------ */
+
+  /* ------------------------------------------------------------------ */
+
+  /* SECTION-3 (Our Services)*/
+
+  .myCard {
+    height: 200px;
+    width: 100%;
+  }
+
+  .sticky-column {
+    top: 200px;
+  }
+
+  /* ------------------------------------------------------------------ */
+  /*(IMACT)*/
+  .tick {
+        height: 22px;
+        width: 22px;
+        top: 124px;
+        left: 53px;
+    }
+
+  /*(IMACT-END)*/
+  /* ------------------------------------------------------------------ */
+
+  /* number of client speaks */
+
+  .item-1 {
+    font-size: 10px !important;
+  }
+
+  /* number of client speaks */
+
+  /* ------------------------------------------------------------------ */
+
+  /*FORM SECTION*/
+  .my-form {
+    display: none;
+  }
+
+  .my-form-mb {
+    display: block;
+    background-image: radial-gradient(
+      circle at top right,
+      rgb(255, 106, 106) 0%,
+      rgb(255, 106, 106) 14.286%,
+      rgb(255, 106, 106) 14.286%,
+      rgb(255, 106, 106) 28.572%,
+      rgb(255, 106, 106) 28.572%,
+      rgb(255, 106, 106) 42.858%,
+      rgb(255, 106, 106) 42.858%,
+      rgb(255, 106, 106) 57.144%,
+      rgb(255, 106, 106) 57.144%,
+      rgb(255, 106, 106) 71.43%,
+      rgb(179, 48, 48) 71.43%,
+      rgb(179, 48, 48) 85.716%,
+      rgb(172, 36, 36) 85.716%,
+      rgb(172, 36, 36) 100.002%
+    );
+    padding: 30px 30px 30px 15px;
+    border-radius: 50px;
+  }
+
+  /*FORM SECTION END*/
+  /* ------------------------------------------------------------------ */
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* FOOTER */
+  .foot-img {
+    height: 210px;
+  }
+
+  .foot-hover:hover .foot-visible {
+    top: 25%;
+    opacity: 1;
+    left: 10%;
+  }
+
+  /* FOOTER END*/
+  /* ------------------------------------------------------------------ */
+}
+
+/* ------------------------------------------------------------------ABOUT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ABOUT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ABOUT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ABOUT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ABOUT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ABOUT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ABOUT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+
+/* --------------------------------TAB VIEW----------------------------------*/
+
+@media only screen and (min-width: 401px) and (max-width: 800px){
+  
+  .banner-text{
+    margin-top: -100px;
+  }
+
+  .our-story{
+    position: relative; /* Make sure the element is positioned relative */
+    z-index: -1;
+  }
+  
+  .our-story::before {
+    content: ""; /* Create a pseudo-element */
+    position: absolute; /* Position it absolutely */
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the entire parent element */
+    height: 100%;
+    background-color: black; /* Adjust the color and opacity as needed */
+    opacity: 0.3;
+    z-index: -1; /* Place the overlay behind the content */
+  }
+  .os-text{
+    z-index:5;
+  }
+  .our-story{
+    background: url('./assets/About/Rectangle 139.png');
+    padding: 230px 30px 30px 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .our-story p:nth-child(1){
+    font-size: 30px;
+  }
+  .our-story p:nth-child(2){
+    text-align: justify !important;  
+  }
+  
+}
+
+/* --------------------------------MOBILE VIEW----------------------------------*/
+@media only screen and (max-width: 800px) {
+  html,body{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  section{
+    overflow-x: hidden !important;
+}
+  .banner-text{
+    margin-top: 0px;
+    text-align: justify !important;
+}
+.our-story{
+  position: relative; /* Make sure the element is positioned relative */
+  z-index: -1;
+}
+
+.our-story::before {
+  content: ""; /* Create a pseudo-element */
+  position: absolute; /* Position it absolutely */
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire parent element */
+  height: 100%;
+  background-color: black; /* Adjust the color and opacity as needed */
+  opacity: 0.3;
+  z-index: -1; /* Place the overlay behind the content */
+}
+.os-text{
+  z-index:5;
+}
+.our-story{
+  background: url('./assets/About/Rectangle 139.png');
+  padding: 30px 30px 30px 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.our-story p:nth-child(1){
+  font-size: 30px;
+}
+.our-story p:nth-child(2){
+  text-align: justify !important;  
+}
+}
+
+
+/* ------------------------------------------------------------------SERVICE PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SERVICE PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SERVICE PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SERVICE PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SERVICE PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SERVICE PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SERVICE PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+@media only screen and (min-width: 401px) and (max-width: 800px){
+  
+.cpe{
+  background: url('./assets/Service-pg/01\ \(1\).png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 20px 20px 20px;
+  border-radius: 20px;
+  margin:10px;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+     .banner-buttons {
+        margin-top: -50px;
+        margin-bottom: 30px;
+    }
+.banner-gs-btn{
+ font-size: 10px;
+}
+
+.cpe{
+  background: url('./assets/Service-pg/01\ \(1\).png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 20px 20px 20px;
+  border-radius: 20px;
+  margin:10px;
+}
+.cube-card p.fw-bolder{
+  font-size: 28px;
+}
+}
+
+@media only screen and (max-width: 400px){
+  .cube-card p.fw-bolder{
+    font-size: 15px;
+  }
+  .bg-grey{
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    margin: 10px;
+}
+}
+/* ------------------------------------------------------------------SMM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SMM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SMM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SMM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SMM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SMM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SMM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+@media only screen and (max-width: 400px) {
+  .our-works p{
+    color:#ff8a47;
+    font-size: 30px;
+}
+}
+/* ------------------------------------------------------------------MOBILE APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------MOBILE APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------MOBILE APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------MOBILE APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------MOBILE APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------MOBILE APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------MOBILE APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+@media only screen and (min-width: 401px) and (max-width: 800px){
+  .op-counter-img{
+    width:90%;
+    margin-left: 50px;
+  }
+  .op-counter-1{
+    top:85px;
+    left:180px;
+}
+.op-counter-2{
+    top:170px;
+    right:96px;
+}
+.op-counter-3{
+    bottom:216px;
+    left:183px;
+}
+.op-counter-4{
+    bottom:93px;
+    right:216px;
+}
+}
+@media only screen and (max-width: 400px) {
+  .op-counter-1{
+    top:37px;
+    left:65px;
+}
+.op-counter-2{
+    top:75px;
+    right:11px;
+}
+.op-counter-3{
+    bottom:123px;
+    left:63px;
+}
+.op-counter-4{
+    bottom:60px;
+    right:96px;
+}
+}
+
+/* ------------------------------------------------------------------WEB DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+@media only screen and (max-width: 400px) {
+ .wd-steps{
+  display: none;
+ }
+ .row.wd-steps-mb{
+  display: block;
+ }
+}
+/* ------------------------------------------------------------------WEB DEVELOPMENT APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+@media only screen and (max-width: 400px) {
+ .wadc{
+  font-size: 18px;
+ }
+}

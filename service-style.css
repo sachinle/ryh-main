@@ -1,0 +1,475 @@
+
+.text-justify{
+    text-align: justify;
+}
+/*.service-banner-bg{*/
+/*    background-color: #efefef;*/
+/*}*/
+.banner-gs-btn{
+    border-radius: 20px;
+    padding:5px 10px;
+    border:none;
+}
+.banner-buttons{
+    margin-top: -170px;
+    margin-bottom: 170px;
+}
+.cpe{
+    background: url('./assets/Service-pg/01\ \(1\).png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 20px 20px 20px;
+    border-radius: 20px;
+}
+.cube-card{
+    background-color: #f8f8f8;
+    border-radius: 20px;
+}
+
+.bg-grey{
+    background-color: #f8f8f8;
+    border-radius: 100px;
+}
+
+.service-card{
+    border: none;
+    border-radius: 30px;
+    height:260px;
+}
+.service-card p{
+    margin-bottom: 0 !important;
+}
+.service-card p:nth-child(4){
+    margin-top: 5px;
+    font-size: 13px;
+}
+.last-bg{
+    background: url('./assets/Service-pg/last-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ------------------------------------------------------------------SEO PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SEO PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SEO PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SEO PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SEO PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SEO PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SEO PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+.background-grey{
+    background-color: #efefef;
+}
+.cap-card{
+    background-color: #f8f8f8;
+    height: 200px;
+    border-top: 3px solid orangered;
+}
+.cap-card p:nth-child(1){
+    font-size: 15px;
+}
+.capablities-icon{
+    width: 33px;
+    margin-right:10px;
+}
+.f-13{
+    font-size: 13px;
+}
+
+.our-approach{
+    background-color:#beffb4;
+}
+.our-approach img{
+    width:70px;
+    margin-left:-10px;
+}
+.oa-card{
+    height:300px;
+}
+/* ------------------------------------------------------------------SMM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SMM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SMM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SMM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SMM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SMM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SMM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+.smm-media{
+    width:50px;
+}
+.smm-media-service{
+    background-color: #f6f6f6;
+    border-radius: 30px;
+}
+.our-works{
+    background-color: #ffcfb4;
+}
+.our-works h2{
+    color:#ff8a47;
+    font-size: 80px;
+}
+button.owl-next.bg-danger.text-white.rounded-pill{
+    padding:4px 10px !important;
+}
+button.owl-prev.bg-danger.text-white.rounded-pill{
+    padding:4px 10px !important;
+}
+.owl-dots{
+    display: none !important;
+}
+
+.smm-cbg{
+    background-image: url('./assets/Service-pg/smm/1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.smm-cbg:nth-child(2){
+    background-image: url('./assets/Service-pg/smm/2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.smm-lbg{
+    background-image: url('./assets/Service-pg/smm/Rectangle\ 2531.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ------------------------------------------------------------------SEM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SEM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SEM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SEM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SEM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SEM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------SEM PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+.sem-wwd-card{
+    background-color: #f6f6f6;
+    height: 230px;
+    border-radius: 20px;
+}
+.sem-wwd-card img{
+    width: 20%;
+}
+.sem-wwd-card p:nth-child(2){
+    margin-bottom: 5px;
+}
+.sem-wwd-card p:nth-child(3){
+    font-size: 12px;
+}
+.sem-bg{
+    background-color: #beffb4;
+}
+.bg-light-blue{
+    background-color: #adcfff;
+}
+.head-sem-bg{
+    background-image: url('./assets/customer-experience-creative-collage\ 1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ------------------------------------------------------------------BRANDING PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------BRANDING PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------BRANDING PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------BRANDING PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------BRANDING PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------BRANDING PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------BRANDING PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+.branding-bg{
+    background-color: #beffb4;
+}
+.branding-card{
+    background-color: white;
+    height: 285px;
+    border-radius: 20px;
+}
+.branding-card img{
+    width: 20%;
+}
+.branding-card p:nth-child(2){
+    margin-bottom: 5px;
+}
+.branding-card p:nth-child(3){
+    font-size: 12px;
+}
+.btm-bdr{
+    border-radius: 0 0 20px 20px ;
+}
+
+.bg-tbrands{
+    background-color: #E81B24;
+}
+.tbrands-height{
+    height:300px;
+}
+/* ------------------------------------------------------------------UI/UX PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------UI/UX PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------UI/UX PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------UI/UX PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------UI/UX PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------UI/UX PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------UI/UX PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+.ds-bg{
+    background-color: #beffb4;
+}
+.ds-card{
+    background-color: white;
+    height: 435px;
+    border-radius: 20px;
+}
+.ds-card img{
+    width: 15%;
+}
+.ds-card p:nth-child(2){
+    margin-bottom: 5px;
+}
+.ds-card p:nth-child(3){
+    font-size: 15px;
+}
+.text-grey{
+    color:#d9d9d9;
+}
+/* ------------------------------------------------------------------MOBILE APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------MOBILE APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------MOBILE APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------MOBILE APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------MOBILE APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------MOBILE APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------MOBILE APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+.mobile-app-op{
+    background: radial-gradient(64.56% 45.46% at 62.12% 56.18%, rgba(190, 255, 180, 0.03) 0%, rgba(190, 255, 180, 0.61) 100%);
+}
+.mobile-app-op h2{
+    color:#2FD416 !important;
+}
+
+
+.op-counter-1{
+    top:50px;
+    left:85px;
+}
+.op-counter-2{
+    top:110px;
+    right:40px;
+}
+.op-counter-3{
+    bottom:156px;
+    left:92px;
+}
+.op-counter-4{
+    bottom:68px;
+    right:133px;
+}
+
+.mobile-app-icon{
+    width:20%;
+}
+
+.mac-bg{
+    background-color: #FFCFB4;
+}
+.mad-bg{
+    background-color: #BEFFB4;
+}
+.ads-bg{
+    background-color: #ffcfb4;
+}
+img.img-fluid.d-block.star-icon{
+    width:10%;
+    height:8%;
+}
+.adsp{
+    font-size: larger;
+    font-weight: 500;
+}
+button.mab{
+    background-color: #FFCFB4;
+    color:#FF6309;
+    padding: 5px 15px;
+    font-weight: 500;
+}
+
+.mb-cards{
+    background-image:url('./assets/Service-pg/mobile-app/Rectangle\ 2541.png') ;
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mb-cards-2{
+    background-image:url('./assets/Service-pg/mobile-app/Rectangle\ 25412.png') ;
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mb-cards-3{
+    background-image:url('./assets/Service-pg/mobile-app/Rectangle\ 25413.png') ;
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mb-cards-4{
+    background-image:url('./assets/Service-pg/mobile-app/Rectangle\ 25414.png') ;
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bdr-20{
+    border-radius: 20px;
+}
+.w-fit{
+    width: fit-content;
+}
+
+.p-card-1{
+    background-image: url('./assets/Service-pg/mobile-app/Group\ 40564.png');
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p-card-2{
+    background-image: url('./assets/Service-pg/mobile-app/Group\ 40572.png');
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p-card-3{
+    background-image: url('./assets/Service-pg/mobile-app/Group\ 40601.png');
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p-card-4{
+    background-image: url('./assets/Service-pg/mobile-app/Group\ 40602.png');
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ------------------------------------------------------------------PAY PER CLICK APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------PAY PER CLICK APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------PAY PER CLICK APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------PAY PER CLICK APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------PAY PER CLICK APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------PAY PER CLICK APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------PAY PER CLICK APP PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+
+
+.iby p:nth-child(1){
+    font-weight:500 ;
+}
+.iby p:nth-child(2){
+    font-size: 13px;
+}
+
+.gqr-bg{
+    background-color: #cbffc3;
+}
+.fw-500{
+    font-weight: 500;
+}
+.gqrp{
+    color:#2FD416;
+}
+
+.slide-card{
+    height:324px;
+    border-radius: 15px;
+}
+
+img.img-fluid.d-block.slide-icon{
+width:15%;
+}
+.slide-card div p:nth-child(2){
+    font-size: 13px;
+}
+.specialize-bg{
+    background: url('./assets/Service-pg/pay-per-click/imgpsh_fullsize_anim (2).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ------------------------------------------------------------------WEB DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+.row.wd-steps-mb{
+    display: none;
+}
+.wd-our-works{
+    background-color: #F8F8F8;
+}
+.wd-our-works{
+    color:#E5E5E5;
+}
+.wd-service{
+    background-color:#ffcfb4;
+}
+h2.text-center.fw-bolder.mb-0.display-5{
+ color:#FF6309;
+}
+
+
+/* ------------------------------------------------------------------WEB APP DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB APP DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB APP DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB APP DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB APP DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB APP DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB APP DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+.app-bg{
+    background-image: url('./assets/Banner\ \(9\).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.app-services{
+    transition: all 0.3s;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+.app-services p{
+    font-size: 14px;
+
+}
+.app-services:hover{
+    border-radius: 30px;
+    border: 2px solid #DBEEFF;
+    background: #FFF;
+    box-shadow: 0px 0px 15px 2px rgba(173, 202, 255, 0.15);
+    transition: all 0.3s;
+}
+.y-app-bg{
+    background-image: url('./assets/Group\ 40517.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.y-app-bg-mb{
+    background: linear-gradient(180deg, #E4222B 15.22%, #450003 130.05%);
+}
+/* ------------------------------------------------------------------WEB APP DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB APP DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB APP DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB APP DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB APP DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB APP DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------WEB APP DEVELOPMENT PAGE RESPONSIVE STARTS------------------------------------------------------------------------ */
+.image{
+    background-image:url('./assets/web designing/web designing/1.png') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+    
+
+
+

@@ -2,14 +2,23 @@
     margin-top:-400px;
     margin-bottom:80px;
 }
+.ellipse {
+    position: relative;
+    width: 430px;
+    height: 430px;
+    margin: 0 auto;
+}
 .ellipse-bg {
     width: 430px;              /* Width of the circle */
     height: 430px;             /* Height of the circle */
     background-color: #D1DFFD; /* Background color */
-    border-radius: 50%;     
-    position: relative;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     overflow: hidden;
-    margin: 0 auto;
+    z-index: 1;
 }
 
 .logo-image {
@@ -18,7 +27,7 @@
     top: 15%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 3;
+    z-index: 4;
 }
 
 .content-image {
@@ -27,7 +36,7 @@
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
+    z-index: 3;
     transition: all 0.3s linear;
 }
 
@@ -38,7 +47,7 @@
     transform: translateX(-50%);
     width: 100%;
     text-align: center;
-    z-index: 1;
+    z-index: 5;
     transition: all 0.3s linear;
 }
 

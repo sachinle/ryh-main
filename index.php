@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- <—------- Primary Tag—------->
-  <title> Best Web Design Company in Dubai | Professional Website Design Company </title>
+  <title> Best Web Design Company in Coimbatore | Professional Website Design Company </title>
   <meta name="description"
-    content="Looking for a web design company in Dubai? At Rank You Higher, we create responsive websites tailored to enhance your business's online presence." />
+    content="Looking for a web design company in Coimbatore? At Rank You Higher, we create responsive websites tailored to enhance your business's online presence." />
 
   <!-- <—------- Canonical Tag—------->
   <link rel="canonical" href="https://rankuhigher.in" />
@@ -15,43 +15,53 @@
   <!-- Open Graph/Facebook-->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://rankuhigher.in" />
-  <meta property="og:title" content="Best Web Design Company in Dubai | Professional Website Design Company" />
+  <meta property="og:title" content="Best Web Design Company in Coimbatore | Professional Website Design Company" />
   <meta property="og:description"
-    content="Looking for a web design company in Dubai? At Rank You Higher, we create responsive websites tailored to enhance your business's online presence." />
+    content="Looking for a web design company in Coimbatore? At Rank You Higher, we create responsive websites tailored to enhance your business's online presence." />
   <meta property="og:image" content="https://rankuhigher.in/assets/ryh-logo.png" />
 
   <!-- <—-------Twitter Card—------->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://rankuhigher.in" />
   <meta property="twitter:title"
-    content="Best Web Design Company in Dubai | Professional Website Design Company" />
+    content="Best Web Design Company in Coimbatore | Professional Website Design Company" />
   <meta property="twitter:description"
-    content="Looking for a web design company in Dubai? At Rank You Higher, we create responsive websites tailored to enhance your business's online presence." />
+    content="Looking for a web design company in Coimbatore? At Rank You Higher, we create responsive websites tailored to enhance your business's online presence." />
   <meta property="twitter:image" content="https://rankuhigher.in/assets/ryh-logo.png" />
 
   <link rel="icon" type="image/x-icon" href="./assets/RYH LOGO White 01 (1) 2.png">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-  <link rel="stylesheet" href="semantic.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="./responsive.css">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JRFJ4X0D3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+  <!-- Speed up connections to the CDNs we still use for non-blocking assets -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-5JRFJ4X0D3');
-  </script>
+  <!-- Preload the LCP hero image. The banner only appears on mobile/tablet (<=800px),
+       so the preload is scoped there and points at the small mobile-sized WebP. -->
+  <link rel="preload" as="image" href="./assets/banner-mobile.webp" media="(max-width: 800px)" fetchpriority="high">
+
+  <!-- Critical CSS (render-blocking, kept minimal). Bootstrap is self-hosted so the
+       browser reuses the already-open same-origin connection (no cross-origin handshake).
+       Local files carry ?v=<file-modified-time> so a long cache never serves a stale edit. -->
+  <link href="assets/vendor/bootstrap.min.css?v=<?php echo @filemtime(__DIR__ . '/assets/vendor/bootstrap.min.css'); ?>" rel="stylesheet" />
+  <link rel="stylesheet" href="semantic.css?v=<?php echo @filemtime(__DIR__ . '/semantic.css'); ?>" />
+  <link rel="stylesheet" href="style.css?v=<?php echo @filemtime(__DIR__ . '/style.css'); ?>" />
+  <link rel="stylesheet" href="./responsive.css?v=<?php echo @filemtime(__DIR__ . '/responsive.css'); ?>">
+
+  <!-- Non-critical CSS: load without blocking first paint -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  </noscript>
+
+  <!-- Google Analytics is loaded once, globally, by the navigation include. -->
 
   <!-- <—---Business Schema—--->
   <script type="application/ld+json">
@@ -66,7 +76,7 @@
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Rathinam Techzone Campus, Eachanari",
-        "addressLocality": "Dubai",
+        "addressLocality": "Coimbatore",
         "postalCode": "641021",
         "addressCountry": "IN"
       },
@@ -117,21 +127,22 @@
 
   <?php include 'Navigation bar.php'; ?>
 
+  <main>
   <section>
     <div class="container-fluid banner p-4 pt-5 pb-5">
       <div class="row p-5 pt-5 pb-5">
         <div class="col-12 col-md-8">
           <h2 class="fs-6 fw-500">
-            <span class="text-danger">-------</span> Digital marketing company in Dubai
+            <span class="text-danger">-------</span> Digital marketing company in Coimbatore
           </h2>
           <h2 class="fs-3 fw-bolder">Elevate your brand identity with <br>our digital marketing strategy.
           </h2>
           <div class="mx-5">
-            <img src="./assets/Vector-2.svg" alt="Web-design-company" class="d-block img-fluid mx-5" />
+            <img src="./assets/Vector-2.svg" alt="Web-design-company" class="d-block img-fluid mx-5" decoding="async">
           </div>
           <div class="fs-5 fw-500 pt-5">
             End your search with Rank You Higher’s best <span class="text-danger fw-bold"></span> <br>digital marketing
-            services in Dubai,<br> <span class="text-danger fw-bold">providing data-driven SEO, PPC, and<br> social
+            services in Coimbatore,<br> <span class="text-danger fw-bold">providing data-driven SEO, PPC, and<br> social
               media solutions to get your<br> business tall.
 
           </div>
@@ -140,7 +151,8 @@
         <div class="col-12 col-md-3">
           <div class="d-flex flex-column">
             <div class="">
-              <img src="./assets/Group 20021 (1).png" alt="Group 20021 (1).png" class="d-block img-fluid" />
+              <img src="./assets/Group 20021 (1).png" alt="Digital tools that boost revenue"
+                class="d-block img-fluid" width="402" height="310" decoding="async">
             </div>
             <div class="fs-6 fw-500 my-4">
               Engaging your brand with digital tools that boost revenue and improve relationships with the customer –
@@ -159,7 +171,11 @@
   <section>
     <div class="banner-sm">
       <div class="container-fluid p-0">
-        <img src="./assets/banner.png" alt="banner.png" class="d-block img-fluid">
+        <picture>
+          <source type="image/webp" srcset="./assets/banner-mobile.webp">
+          <img src="./assets/banner-mobile.png" alt="Rank You Higher digital marketing services in Coimbatore"
+            class="d-block img-fluid" width="800" height="424" fetchpriority="high" decoding="async">
+        </picture>
       </div>
     </div>
   </section>
@@ -169,10 +185,10 @@
         <div class="col-12 col-lg-6 my-auto p-0 p-lg-4" data-aos="zoom-out-right">
           <div class="text-white d-flex flex-column p-2 p-lg-5">
             <h1 class="display-6 fs-3 fw-bolder">
-              Best Digital Marketing Company <br> in <span class="text-warning"> Dubai </span>
+              Best Digital Marketing Company <br> in <span style="color:#ffe680"> Coimbatore </span>
             </h1>
             <div class="display-6 fs-4 f-16 pt-2 text-justify">
-              For performance-driven digital marketing services in Dubai, look no further than Rank You Higher. We offer
+              For performance-driven digital marketing services in Coimbatore, look no further than Rank You Higher. We offer
               holistic answers to your entire SEO requirement, ranging from simple social media work to serious SEO
               work, and help prepare your brand for increased digital footprint and sustainable growth.
             </div>
@@ -188,7 +204,7 @@
               <div class="circle">
                 <div class="p-5 center-circle-image">
                   <img src="./assets/RYH LOGO White 01 (1) 2.png" alt="RYH LOGO White 01 (1) 2.png"
-                    class="d-block img-fluid center-btn" />
+                    class="d-block img-fluid center-btn" loading="lazy" decoding="async" width="85" height="85">
                 </div>
                 <div>
                   <p class="text-white position-absolute f-12 smm-text"><i class="fa fa-info-circle"></i> Social Media
@@ -196,28 +212,28 @@
                   <button class="button btn parent-btn hover-1">
                     <!-- parent button -->
                     <img src="./assets/circle-icons/Vector.png" alt="Vector.png"
-                      class="img-fluid d-block d-flex justify-content-center parent-img">
+                      class="img-fluid d-block d-flex justify-content-center parent-img" loading="lazy" decoding="async" width="33" height="32">
                     <!--  -->
                   </button>
                   <button class="button btn none-1 child-btn" style="top: -80px; left: 6%">
                     <img src="./assets/circle-icons/media-logos/Semrush_logo 1.png" alt="Semrush_logo 1.png"
-                      class="img-fluid d-block justify-content-center">
+                      class="img-fluid d-block justify-content-center" loading="lazy" decoding="async" width="109" height="33">
                   </button>
                   <button class="button btn none-1 child-btn" style="top: -80px; right: 11%">
                     <img src="./assets/circle-icons/media-logos/Semrush_logo 1 (1).png" alt="Semrush_logo 1 (1).png"
-                      class="img-fluid d-block justify-content-center">
+                      class="img-fluid d-block justify-content-center" loading="lazy" decoding="async" width="109" height="33">
                   </button>
                   <button class="button btn none-1 child-btn" style="top: -6px; right: 10%">
                     <img src="./assets/circle-icons/media-logos/Group 19359.png" alt="Group 19359.png"
-                      class="img-fluid d-block justify-content-center">
+                      class="img-fluid d-block justify-content-center" loading="lazy" decoding="async" width="108" height="33">
                   </button>
                   <button class="button btn none-1 child-btn" style="top: -6px; right: 63%">
                     <img src="./assets/circle-icons/media-logos/Group 19358.png" alt="Group 19358.png"
-                      class="img-fluid d-block justify-content-center">
+                      class="img-fluid d-block justify-content-center" loading="lazy" decoding="async" width="109" height="33">
                   </button>
                   <button class="button btn none-1 child-btn" style="top: 59px; right: 35%">
                     <img src="./assets/circle-icons/media-logos/Semrush_logo 1 (2).png" alt="Semrush_logo 1 (2).png"
-                      class="img-fluid d-block justify-content-center">
+                      class="img-fluid d-block justify-content-center" loading="lazy" decoding="async" width="109" height="33">
                   </button>
                 </div>
                 <div>
@@ -226,7 +242,7 @@
                   </p>
                   <button class="button btn text-white parent-btn hover-2">
                     <img src="./assets/circle-icons/Vector (1).png" alt="Vector (1).png"
-                      class="img-fluid d-block d-flex justify-content-center parent-img">
+                      class="img-fluid d-block d-flex justify-content-center parent-img" loading="lazy" decoding="async" width="30" height="35">
                   </button>
                 </div>
                 <div>
@@ -235,24 +251,24 @@
                     Marketing</p>
                   <button class="button btn text-white parent-btn hover-3">
                     <img src="./assets/circle-icons/Group (1).png" alt="Group (1).png"
-                      class="img-fluid d-block d-flex justify-content-center parent-img">
+                      class="img-fluid d-block d-flex justify-content-center parent-img" loading="lazy" decoding="async" width="48" height="45">
                   </button>
                   <!--  -->
                   <button class="button btn none-3 child-btn" style="top: -28px; left: -4%">
                     <img src="./assets/circle-icons/media-logos/Semrush_logo 1 (3).png" alt="Semrush_logo 1 (3).png"
-                      class="img-fluid d-block d-flex justify-content-center">
+                      class="img-fluid d-block d-flex justify-content-center" loading="lazy" decoding="async" width="118" height="36">
                   </button>
                   <button class="button btn none-3 child-btn" style="top: 19px; left: -33%">
                     <img src="./assets/circle-icons/media-logos/Semrush_1 (1).png" alt="Semrush_1 (1).png"
-                      class="img-fluid d-block d-flex justify-content-center">
+                      class="img-fluid d-block d-flex justify-content-center" loading="lazy" decoding="async" width="118" height="37">
                   </button>
                   <button class="button btn none-3 child-btn" style="top: 87px; left: -33%">
                     <img src="./assets/circle-icons/media-logos/Semrush_1 (2).png" alt="Semrush_1 (2).png"
-                      class="img-fluid d-block d-flex justify-content-center">
+                      class="img-fluid d-block d-flex justify-content-center" loading="lazy" decoding="async" width="118" height="36">
                   </button>
                   <button class="button btn none-3 child-btn" style="top: 134px; left: -4%">
                     <img src="./assets/circle-icons/media-logos/Semrush_1.png" alt="Semrush_1.png"
-                      class="img-fluid d-block d-flex justify-content-center">
+                      class="img-fluid d-block d-flex justify-content-center" loading="lazy" decoding="async" width="118" height="37">
                   </button>
                 </div>
                 <div>
@@ -261,24 +277,24 @@
                     UI|UX Design</p>
                   <button class="button btn text-white parent-btn hover-4">
                     <img src="./assets/circle-icons/Vector (2).png" alt="Vector (2).png"
-                      class="img-fluid d-block d-flex justify-content-center parent-img">
+                      class="img-fluid d-block d-flex justify-content-center parent-img" loading="lazy" decoding="async" width="37" height="35">
                   </button>
                   <!--  -->
                   <button class="button btn none-4 child-btn" style="top: 84px; left: -20%">
                     <img src="./assets/circle-icons/media-logos/Group 19362 (1).png" alt="Group 19362 (1).png"
-                      class="img-fluid d-block d-flex justify-content-center">
+                      class="img-fluid d-block d-flex justify-content-center" loading="lazy" decoding="async" width="109" height="34">
                   </button>
                   <button class="button btn none-4 child-btn" style="top: 140px; left: -44%">
                     <img src="./assets/circle-icons/media-logos/Group 19363.png" alt="Group 19363.png"
-                      class="img-fluid d-block d-flex justify-content-center">
+                      class="img-fluid d-block d-flex justify-content-center" loading="lazy" decoding="async" width="109" height="34">
                   </button>
                   <button class="button btn none-4 child-btn" style="top: 206px; left: -44%">
                     <img src="./assets/circle-icons/media-logos/Group 19362.png" alt="Group 19362.png"
-                      class="img-fluid d-block d-flex justify-content-center">
+                      class="img-fluid d-block d-flex justify-content-center" loading="lazy" decoding="async" width="109" height="34">
                   </button>
                   <button class="button btn none-4 child-btn" style="top: 264px; left: -20%">
                     <img src="./assets/circle-icons/media-logos/spline_logo 1.png" alt="spline_logo 1.png"
-                      class="img-fluid d-block d-flex justify-content-center">
+                      class="img-fluid d-block d-flex justify-content-center" loading="lazy" decoding="async" width="109" height="34">
                   </button>
                 </div>
                 <div>
@@ -287,7 +303,7 @@
                     Development</p>
                   <button class="button btn text-white parent-btn hover-5">
                     <img src="./assets/circle-icons/Vector(3).png" alt="Vector(3).png"
-                      class="img-fluid d-block d-flex justify-content-center parent-img">
+                      class="img-fluid d-block d-flex justify-content-center parent-img" loading="lazy" decoding="async" width="32" height="32">
                   </button>
                 </div>
                 <div>
@@ -295,7 +311,7 @@
                   <p class="text-white position-absolute f-12 b-text"><i class="fa fa-info-circle"></i> Branding</p>
                   <button class="button btn text-white parent-btn hover-6">
                     <img src="./assets/circle-icons/Group 19317.png" alt="Group 19317.png"
-                      class="img-fluid d-block d-flex justify-content-center parent-img">
+                      class="img-fluid d-block d-flex justify-content-center parent-img" loading="lazy" decoding="async" width="45" height="45">
                   </button>
                 </div>
                 <div>
@@ -304,7 +320,7 @@
                   </p>
                   <button class="button btn text-white parent-btn hover-7">
                     <img src="./assets/circle-icons/Group 19273.png" alt="Group 19273.png"
-                      class="img-fluid d-block d-flex justify-content-center parent-img">
+                      class="img-fluid d-block d-flex justify-content-center parent-img" loading="lazy" decoding="async" width="36" height="36">
                   </button>
                 </div>
                 <div>
@@ -313,7 +329,7 @@
                     Optimization</p>
                   <button class="button btn text-white parent-btn hover-8">
                     <img src="./assets/circle-icons/Group.png" alt="Group.png"
-                      class="img-fluid d-block d-flex justify-content-center parent-img">
+                      class="img-fluid d-block d-flex justify-content-center parent-img" loading="lazy" decoding="async" width="41" height="43">
                   </button>
                 </div>
               </div>
@@ -327,15 +343,15 @@
                 </p>
                 <div class="d-flex justify-content-center flex-column mb-2">
                   <img src="./assets/circle-icons/media-logos/Semrush_logo 1.png" alt="Semrush_logo 1.png"
-                    class="bg-white mx-auto p-1">
+                    class="bg-white mx-auto p-1" loading="lazy" decoding="async" width="109" height="33">
                   <img src="./assets/circle-icons/media-logos/Group 19358.png" alt="Group 19358.png"
-                    class="bg-white mx-auto p-1">
+                    class="bg-white mx-auto p-1" loading="lazy" decoding="async" width="109" height="33">
                   <img src="./assets/circle-icons/media-logos/Group 19359.png" alt="Group 19359.png"
-                    class="bg-white mx-auto p-1">
+                    class="bg-white mx-auto p-1" loading="lazy" decoding="async" width="108" height="33">
                   <img src="./assets/circle-icons/media-logos/Semrush_logo 1 (1).png" alt="Semrush_logo 1 (1).png"
-                    class="bg-white mx-auto p-1">
+                    class="bg-white mx-auto p-1" loading="lazy" decoding="async" width="109" height="33">
                   <img src="./assets/circle-icons/media-logos/Semrush_logo 1 (2).png" alt="Semrush_logo 1 (2).png"
-                    class="bg-white mx-auto p-1">
+                    class="bg-white mx-auto p-1" loading="lazy" decoding="async" width="109" height="33">
                 </div>
               </div>
               <div class="col-4">
@@ -344,13 +360,13 @@
                 </p>
                 <div class="d-flex justify-content-center flex-column mb-2">
                   <img src="./assets/circle-icons/media-logos/Semrush_logo 1 (3).png" alt="Semrush_logo 1 (3).png"
-                    class="bg-white mx-auto p-1">
+                    class="bg-white mx-auto p-1" loading="lazy" decoding="async" width="118" height="36">
                   <img src="./assets/circle-icons/media-logos/Semrush_1 (1).png" alt="Semrush_1 (1).png"
-                    class="bg-white mx-auto p-1">
+                    class="bg-white mx-auto p-1" loading="lazy" decoding="async" width="118" height="37">
                   <img src="./assets/circle-icons/media-logos/Semrush_1 (2).png" alt="Semrush_1 (2).png"
-                    class="bg-white mx-auto p-1">
+                    class="bg-white mx-auto p-1" loading="lazy" decoding="async" width="118" height="36">
                   <img src="./assets/circle-icons/media-logos/Semrush_1.png" alt="Semrush_1.png"
-                    class="bg-white mx-auto p-1">
+                    class="bg-white mx-auto p-1" loading="lazy" decoding="async" width="118" height="37">
                 </div>
               </div>
               <div class="col-4">
@@ -359,13 +375,13 @@
                 </p>
                 <div class="d-flex justify-content-center flex-column mb-2">
                   <img src="./assets/circle-icons/media-logos/Group 19362 (1).png" alt="Group 19362 (1).png"
-                    class="bg-white mx-auto p-1">
+                    class="bg-white mx-auto p-1" loading="lazy" decoding="async" width="109" height="34">
                   <img src="./assets/circle-icons/media-logos/Group 19362.png" alt="Group 19362.png"
-                    class="bg-white mx-auto p-1">
+                    class="bg-white mx-auto p-1" loading="lazy" decoding="async" width="109" height="34">
                   <img src="./assets/circle-icons/media-logos/Group 19363.png" alt="Group 19363.png"
-                    class="bg-white mx-auto p-1">
+                    class="bg-white mx-auto p-1" loading="lazy" decoding="async" width="109" height="34">
                   <img src="./assets/circle-icons/media-logos/spline_logo 1.png" alt="spline_logo 1.png"
-                    class="bg-white mx-auto p-1">
+                    class="bg-white mx-auto p-1" loading="lazy" decoding="async" width="109" height="34">
                 </div>
               </div>
               <div class="col-12">
@@ -415,7 +431,7 @@
               <h2 class="fs-6 fw-500 text-secondary">How Our Expertise Benefits You</h2>
 
               <div class="text-justify">
-                Rank You Higher's digital marketing services in Dubai assure your company's strategic advantage in the
+                Rank You Higher's digital marketing services in Coimbatore assure your company's strategic advantage in the
                 digital world. Its SEO, social media, and content marketing experts direct the right kind of attention
                 and interaction to your brand, resulting in measurable, long-term growth, all with a clear focus on
                 business objectives.
@@ -423,7 +439,7 @@
             </div>
           </div>
           <div class="col-12 col-lg-6 my-auto">
-            <img src="./assets/right img.png" alt="Group-19424.png" class="img-fluid d-block m-2">
+            <img src="./assets/right img.png" alt="Group-19424.png" class="img-fluid d-block m-2" loading="lazy" decoding="async" width="534" height="291">
           </div>
         </div>
       </div>
@@ -433,7 +449,7 @@
             What is your goal?
           </h2>
           <h2 class="fs-6 fw-500 text-center">
-            We offer a full range of digital marketing services in Dubai. <span class="text-danger"></span>
+            We offer a full range of digital marketing services in Coimbatore. <span class="text-danger"></span>
           </h2>
 
           <div class="home-demo">
@@ -708,17 +724,17 @@
         <div class="col-12 col-lg-6">
           <div class="p-2">
             <h2 class="fs-6 fw-500 text-secondary">WEB DESIGN COMPANY IN</h2>
-            <h2 class="display-4 fw-bold text-danger">Dubai</h2>
+            <h2 class="display-4 fw-bold text-danger">Coimbatore</h2>
             <div class="text-justify">
               Creating a successful website demands the perfect combination of key elements that lead to measurable
               results, such as more leads, sales, or page views. At Rank You Higher, the leading web design company in
-              Dubai, we know that every detail counts. That's why we meticulously test e verything we build to
+              Coimbatore, we know that every detail counts. That's why we meticulously test e verything we build to
               ensure it meets the highest standards.
             </div>
           </div>
         </div>
         <div class="col-12 col-lg-6 my-auto">
-          <img src="./assets/right img.png" alt="Group-19424.png" class="img-fluid d-block m-2">
+          <img src="./assets/right img.png" alt="Group-19424.png" class="img-fluid d-block m-2" loading="lazy" decoding="async" width="534" height="291">
         </div>
       </div>
     </div>
@@ -739,7 +755,7 @@
               <p class="text-justify">
                 Creating a successful website demands the perfect combination of key elements that lead to measurable
                 results, such as more leads, sales, or page views. At Rank You Higher, the leading web design company in
-                Dubai, we know that every detail counts. That's why we meticulously test e verything we build to
+                Coimbatore, we know that every detail counts. That's why we meticulously test e verything we build to
                 ensure it meets the highest standards.
               </p>
             </div>
@@ -777,19 +793,19 @@
       <h3 class="fs-1 text-danger fw-bolder">Design</h3>
 
       <p class="fs-5">UI / UX Designing</p>
-      <img src="./assets/Services/Design/UIUX.png" alt="UIUX.png" class="mt-2 mb-3 img-fluid d-block">
+      <img src="./assets/Services/Design/UIUX.png" alt="UIUX.png" class="mt-2 mb-3 img-fluid d-block" loading="lazy" decoding="async" width="1600" height="960">
 
       <p class="fs-5">Social Media Designing</p>
-      <img src="./assets/Services/Design/social media.png" alt="social media.png" class="mt-2 mb-3 img-fluid d-block">
+      <img src="./assets/Services/Design/social media.png" alt="social media.png" class="mt-2 mb-3 img-fluid d-block" loading="lazy" decoding="async" width="750" height="450">
 
       <p class="fs-5">Video Editing</p>
-      <img src="./assets/Services/Design/Video Editing.png" alt="Video Editing.png" class="mt-2 mb-3 img-fluid d-block">
+      <img src="./assets/Services/Design/Video Editing.png" alt="Video Editing.png" class="mt-2 mb-3 img-fluid d-block" loading="lazy" decoding="async" width="750" height="450">
 
       <p class="fs-5">logo design</p>
-      <img src="./assets/Services/Design/Logo.png" alt="Logo.png" class="mt-2 mb-3 img-fluid d-block">
+      <img src="./assets/Services/Design/Logo.png" alt="Logo.png" class="mt-2 mb-3 img-fluid d-block" loading="lazy" decoding="async" width="750" height="450">
 
       <p class="fs-5">Paper Ad Designing</p>
-      <img src="./assets/Services/Design/papper ad.png" alt="papper ad.png" class="mt-2 mb-3 img-fluid d-block">
+      <img src="./assets/Services/Design/papper ad.png" alt="papper ad.png" class="mt-2 mb-3 img-fluid d-block" loading="lazy" decoding="async" width="750" height="450">
 
     </div>
 
@@ -797,22 +813,22 @@
       <h3 class="fs-1 text-danger fw-bolder">Business</h3>
 
       <p class="fs-5">Branding</p>
-      <img src="./assets/Services/Business/Branding.png" alt="Branding.png" class="mt-2 mb-3 img-fluid d-block">
+      <img src="./assets/Services/Business/Branding.png" alt="Branding.png" class="mt-2 mb-3 img-fluid d-block" loading="lazy" decoding="async" width="750" height="450">
 
       <p class="fs-5">Search Engine Optimization</p>
-      <img src="./assets/Services/Business/SEO.png" alt="SEO.png" class="mt-2 mb-3 img-fluid d-block">
+      <img src="./assets/Services/Business/SEO.png" alt="SEO.png" class="mt-2 mb-3 img-fluid d-block" loading="lazy" decoding="async" width="750" height="450">
 
       <p class="fs-5">Social Marketing</p>
       <img src="./assets/Services/Business/Social Marketing.png" alt="Social Marketing.png"
-        class="mt-2 mb-3 img-fluid d-block">
+        class="mt-2 mb-3 img-fluid d-block" loading="lazy" decoding="async" width="750" height="450">
 
       <p class="fs-5">Web Designing</p>
       <img src="./assets/Services/Business/web designing.jpg" alt="web designing.jpg"
-        class="mt-2 mb-3 img-fluid d-block">
+        class="mt-2 mb-3 img-fluid d-block" loading="lazy" decoding="async">
 
       <p class="fs-5">Pay-Per-Click</p>
       <img src="./assets/Services/Business/Pay-per-click.png" alt="Pay-per-click.png"
-        class="mt-2 mb-3 img-fluid d-block">
+        class="mt-2 mb-3 img-fluid d-block" loading="lazy" decoding="async" width="750" height="450">
 
     </div>
 
@@ -821,33 +837,33 @@
       <h3 class="fs-1 text-danger fw-bolder">Technology</h3>
 
       <p class="fs-5">Web Design</p>
-      <img src="./assets/Services/Technology/Web design.png" alt="Web design.png" class="mt-2 mb-3 img-fluid d-block">
+      <img src="./assets/Services/Technology/Web design.png" alt="Web design.png" class="mt-2 mb-3 img-fluid d-block" loading="lazy" decoding="async" width="750" height="450">
 
       <p class="fs-5">Mobile Apps</p>
-      <img src="./assets/Services/Technology/Mobile Apps.png" alt="Mobile Apps.png" class="mt-2 mb-3 img-fluid d-block">
+      <img src="./assets/Services/Technology/Mobile Apps.png" alt="Mobile Apps.png" class="mt-2 mb-3 img-fluid d-block" loading="lazy" decoding="async" width="750" height="450">
 
       <p class="fs-5">Web Apps</p>
-      <img src="./assets/Services/Technology/Web design.png" alt="Web design.png" class="mt-2 mb-3 img-fluid d-block">
+      <img src="./assets/Services/Technology/Web design.png" alt="Web design.png" class="mt-2 mb-3 img-fluid d-block" loading="lazy" decoding="async" width="750" height="450">
 
       <p class="fs-5">Front-end</p>
-      <img src="./assets/Services/Technology/Front-end.png" alt="Front-end.png" class="mt-2 mb-3 img-fluid d-block">
+      <img src="./assets/Services/Technology/Front-end.png" alt="Front-end.png" class="mt-2 mb-3 img-fluid d-block" loading="lazy" decoding="async" width="750" height="450">
 
       <p class="fs-5">Back-end</p>
-      <img src="./assets/Services/Technology/backend.png" alt="backend.png" class="mt-2 mb-3 img-fluid d-block">
+      <img src="./assets/Services/Technology/backend.png" alt="backend.png" class="mt-2 mb-3 img-fluid d-block" loading="lazy" decoding="async" width="750" height="450">
 
     </div>
 
   </section> -->
   <section>
     <div class="container my-3">
-      <h1 class="text-center p-4 fs-1">Trusted & Professional Services in<span style=color:red> Dubai</span></h1>
+      <h1 class="text-center p-4 fs-1">Trusted & Professional Services in<span style=color:red> Coimbatore</span></h1>
       <div class="row gy-3">
         <div class="col-12 col-lg-4 my-auto">
-          <img src="./assets/Rectangle 215.png" alt="Group-19424.png" class="img-fluid d-block me-2">
+          <img src="./assets/Rectangle 215.png" alt="Group-19424.png" class="img-fluid d-block me-2" loading="lazy" decoding="async" width="397" height="286">
         </div>
         <div class="col-12 col-lg-5">
           <p class="bg-grey rounded-3 fs-16 p-3 text-justify mb-2">
-            Rank You Higher is a relied-upon and professional digital marketing company in Dubai that offers bespoke
+            Rank You Higher is a relied-upon and professional digital marketing company in Coimbatore that offers bespoke
             solutions for businesses to grow online.
           </p>
           <p class="bg-grey rounded-3 fs-16 p-3 text-justify mb-2">
@@ -861,7 +877,7 @@
         </div>
         <div class="col-12 col-lg-3 mx-auto my-auto">
           <div class="">
-            <img src="./assets/Group 20212.png" alt="Group-19424.png" class="img-fluid d-block ms-2 rounded-3">
+            <img src="./assets/Group 20212.png" alt="Group-19424.png" class="img-fluid d-block ms-2 rounded-3" loading="lazy" decoding="async" width="226" height="197">
           </div>
         </div>
       </div>
@@ -876,13 +892,13 @@
           </h2>
           <div class="pt-3 fs-5 f-16 text-justify" data-aos="zoom-out-right" data-aos-delay="400">
             We at Rank You Higher know the magic of customer relationships. Since we're the best digital marketing
-            company in Dubai, we implement advanced techniques to enhance your reach and elevate engagement. We convert
+            company in Coimbatore, we implement advanced techniques to enhance your reach and elevate engagement. We convert
             prospects to committed customers through a results-oriented campaign that stands by our promise.
           </div>
         </div>
         <div class="col-12 col-lg-6 position-relative" data-aos="zoom-out-left" data-aos-delay="300">
-          <img src="./assets/Group-19424.png" alt="Group-19424.png" class="img-fluid d-block">
-          <img src="./assets/tick.gif" alt="tick.gif" class="img-fluid d-block tick position-absolute">
+          <img src="./assets/Group-19424.png" alt="Group-19424.png" class="img-fluid d-block" loading="lazy" decoding="async" width="549" height="482">
+          <img src="./assets/tick.gif" alt="tick.gif" class="img-fluid d-block tick position-absolute" loading="lazy" decoding="async" width="150" height="150">
         </div>
       </div>
     </div>
@@ -903,7 +919,7 @@
           </p>
         </div>
         <div class="col-12 col-lg-3">
-          <img src="./assets/Group 20184.png" alt="Group-19424.png" class="img-fluid d-block">
+          <img src="./assets/Group 20184.png" alt="Group-19424.png" class="img-fluid d-block" loading="lazy" decoding="async" width="564" height="448">
         </div>
       </div>
     </div>
@@ -923,27 +939,27 @@
             </div>
             <div class="item">
               <div class=" item-2">
-                <img src="./assets/slider/Group 19920.png" alt="Group 19920.png" class="d-block img-fluid">
+                <img src="./assets/slider/Group 19920.png" alt="Group 19920.png" class="d-block img-fluid" loading="lazy" decoding="async" width="432" height="450">
               </div>
             </div>
             <div class="item">
               <div class=" item-3">
-                <img src="./assets/slider/Group 19923 (1).png" alt="Group 19923 (1).png" class="d-block img-fluid">
+                <img src="./assets/slider/Group 19923 (1).png" alt="Group 19923 (1).png" class="d-block img-fluid" loading="lazy" decoding="async" width="432" height="450">
               </div>
             </div>
             <div class="item">
               <div class=" item-4">
-                <img src="./assets/slider/Group 19921 (1).png" alt="Group 19921 (1).png" class="d-block img-fluid">
+                <img src="./assets/slider/Group 19921 (1).png" alt="Group 19921 (1).png" class="d-block img-fluid" loading="lazy" decoding="async" width="432" height="450">
               </div>
             </div>
             <div class="item">
               <div class=" item-5">
-                <img src="./assets/slider/Group 19924 (1).png" alt="Group 19924 (1).png" class="d-block img-fluid">
+                <img src="./assets/slider/Group 19924 (1).png" alt="Group 19924 (1).png" class="d-block img-fluid" loading="lazy" decoding="async" width="432" height="450">
               </div>
             </div>
             <div class="item">
               <div class=" item-6">
-                <img src="./assets/slider/Group 19920.png" alt="Group 19920.png" class="d-block img-fluid">
+                <img src="./assets/slider/Group 19920.png" alt="Group 19920.png" class="d-block img-fluid" loading="lazy" decoding="async" width="432" height="450">
               </div>
             </div>
             <div class="item mt-5 py-5">
@@ -953,27 +969,27 @@
             </div>
             <div class="item">
               <div class=" item-2">
-                <img src="./assets/slider/Group 19920.png" alt="Group 19920.png" class="d-block img-fluid">
+                <img src="./assets/slider/Group 19920.png" alt="Group 19920.png" class="d-block img-fluid" loading="lazy" decoding="async" width="432" height="450">
               </div>
             </div>
             <div class="item">
               <div class=" item-3">
-                <img src="./assets/slider/Group 19923 (1).png" alt="Group 19923 (1).png" class="d-block img-fluid">
+                <img src="./assets/slider/Group 19923 (1).png" alt="Group 19923 (1).png" class="d-block img-fluid" loading="lazy" decoding="async" width="432" height="450">
               </div>
             </div>
             <div class="item">
               <div class=" item-4">
-                <img src="./assets/slider/Group 19921 (1).png" alt="Group 19921 (1).png" class="d-block img-fluid">
+                <img src="./assets/slider/Group 19921 (1).png" alt="Group 19921 (1).png" class="d-block img-fluid" loading="lazy" decoding="async" width="432" height="450">
               </div>
             </div>
             <div class="item">
               <div class=" item-5">
-                <img src="./assets/slider/Group 19924 (1).png" alt="Group 19924 (1).png" class="d-block img-fluid">
+                <img src="./assets/slider/Group 19924 (1).png" alt="Group 19924 (1).png" class="d-block img-fluid" loading="lazy" decoding="async" width="432" height="450">
               </div>
             </div>
             <div class="item">
               <div class=" item-6">
-                <img src="./assets/slider/Group 19920.png" alt="Group 19920.png" class="d-block img-fluid">
+                <img src="./assets/slider/Group 19920.png" alt="Group 19920.png" class="d-block img-fluid" loading="lazy" decoding="async" width="432" height="450">
               </div>
             </div>
           </div>
@@ -989,12 +1005,12 @@
         <div class="text-center display-5 fw-bolder">Why We’re the Perfect Digital
           Marketing </div>
         <div class="text-center display-5 fw-bolder">Partner for<img src="./assets/galshir-vector-trophy.gif"
-            alt="galshir-vector-trophy.gif" class="img-fluid vect-1">Your Business</div>
+            alt="galshir-vector-trophy.gif" class="img-fluid vect-1" loading="lazy" decoding="async" width="800" height="600">Your Business</div>
       </h2>
       <div class="text-center">
-        RYH offers Dubai businesses the latest advanced digital marketing techniques to increase visibility, engagement,
+        RYH offers Coimbatore businesses the latest advanced digital marketing techniques to increase visibility, engagement,
         and sustainable growth. Unlock your brand's absolute potential through RYH's excellent digital marketing
-        services in Dubai for exceptional results.
+        services in Coimbatore for exceptional results.
       </div>
     </div>
     <div class="container-fluid mb-5 pb-5" data-aos="fade-down">
@@ -1003,51 +1019,51 @@
           <div class="owl-carousel owl-carousel-2 owl-theme">
             <div class="item">
               <img src="./assets/project slider/Frame 19449 (1).png" alt="Frame 19449 (1).png"
-                class="d-block img-fluid">
+                class="d-block img-fluid" loading="lazy" decoding="async" width="403" height="490">
             </div>
             <div class="item">
               <img src="./assets/project slider/Frame 19451 (1).png" alt="Frame 19451 (1).png"
-                class="d-block img-fluid">
+                class="d-block img-fluid" loading="lazy" decoding="async" width="400" height="488">
             </div>
             <div class="item">
               <img src="./assets/project slider/Frame 19453 (1).png" alt="Frame 19453 (1).png"
-                class="d-block img-fluid">
+                class="d-block img-fluid" loading="lazy" decoding="async" width="402" height="489">
             </div>
             <div class="item">
               <img src="./assets/project slider/Frame 19454 (1).png" alt="Frame 19454 (1).png"
-                class="d-block img-fluid">
+                class="d-block img-fluid" loading="lazy" decoding="async" width="398" height="490">
             </div>
             <div class="item">
               <img src="./assets/project slider/Frame 19455 (1).png" alt="Frame 19455 (1).png"
-                class="d-block img-fluid">
+                class="d-block img-fluid" loading="lazy" decoding="async" width="402" height="490">
             </div>
             <div class="item">
               <img src="./assets/project slider/Frame 19449 (1).png" alt="Frame 19449 (1).png"
-                class="d-block img-fluid">
+                class="d-block img-fluid" loading="lazy" decoding="async" width="403" height="490">
             </div>
             <div class="item">
               <img src="./assets/project slider/Frame 19449 (1).png" alt="Frame 19449 (1).png"
-                class="d-block img-fluid">
+                class="d-block img-fluid" loading="lazy" decoding="async" width="403" height="490">
             </div>
             <div class="item">
               <img src="./assets/project slider/Frame 19451 (1).png" alt="Frame 19451 (1).png"
-                class="d-block img-fluid">
+                class="d-block img-fluid" loading="lazy" decoding="async" width="400" height="488">
             </div>
             <div class="item">
               <img src="./assets/project slider/Frame 19453 (1).png" alt="Frame 19453 (1).png"
-                class="d-block img-fluid">
+                class="d-block img-fluid" loading="lazy" decoding="async" width="402" height="489">
             </div>
             <div class="item">
               <img src="./assets/project slider/Frame 19454 (1).png" alt="Frame 19454 (1).png"
-                class="d-block img-fluid">
+                class="d-block img-fluid" loading="lazy" decoding="async" width="398" height="490">
             </div>
             <div class="item">
               <img src="./assets/project slider/Frame 19455 (1).png" alt="Frame 19455 (1).png"
-                class="d-block img-fluid">
+                class="d-block img-fluid" loading="lazy" decoding="async" width="402" height="490">
             </div>
             <div class="item">
               <img src="./assets/project slider/Frame 19449 (1).png" alt="Frame 19449 (1).png"
-                class="d-block img-fluid">
+                class="d-block img-fluid" loading="lazy" decoding="async" width="403" height="490">
             </div>
           </div>
         </div>
@@ -1058,8 +1074,8 @@
   <!-- <section>
     <div class="container pt-3 mt-3 pb-3 mb-3 w-lg-50 w-100">
       <div class="d-flex justify-content-center display-6 fw-bolder">MEET <img src="./assets/handshake.gif" alt="image"
-          class="img-fluid vect">THE TEAM</div>
-      <div class="d-flex justify-content-center text-center f-16 ">Dubai's Digital Virtuosos - Transmuting Brands into business Legends</div>
+          class="img-fluid vect" loading="lazy" decoding="async" width="150" height="150">THE TEAM</div>
+      <div class="d-flex justify-content-center text-center f-16 ">Coimbatore's Digital Virtuosos - Transmuting Brands into business Legends</div>
     </div>
 
     <div class="container-fluid mt-4 mb-5" data-aos="fade-down">
@@ -1069,12 +1085,12 @@
             <div class="item">
               <div class="card p-1 pb-3 team">
                 <div class="m-2 position-relative d-flex justify-content-center">
-                  <img src="./assets/team members/Group 20029 (1).png" alt="image" class="d-block img-fluid">
+                  <img src="./assets/team members/Group 20029 (1).png" alt="image" class="d-block img-fluid" loading="lazy" decoding="async">
                   <div class="d-flex flex-column position-absolute media-icons">
-                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media">
+                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
                   </div>
                 </div>
                 <div class="d-flex justify-content-center f-16 fw-bold">
@@ -1088,12 +1104,12 @@
             <div class="item">
               <div class="card p-1 pb-3 team">
                 <div class="m-2 position-relative d-flex justify-content-center">
-                  <img src="./assets/team members/Group 20028 (1).png" alt="image" class="d-block img-fluid">
+                  <img src="./assets/team members/Group 20028 (1).png" alt="image" class="d-block img-fluid" loading="lazy" decoding="async">
                   <div class="d-flex flex-column position-absolute media-icons">
-                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media">
+                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
                   </div>
                 </div>
                 <div class="d-flex justify-content-center f-16 fw-bold">
@@ -1107,12 +1123,12 @@
             <div class="item">
               <div class="card p-1 pb-3 team">
                 <div class="m-2 position-relative d-flex justify-content-center">
-                  <img src="./assets/team members/Group 20030.png" alt="image" class="d-block img-fluid">
+                  <img src="./assets/team members/Group 20030.png" alt="image" class="d-block img-fluid" loading="lazy" decoding="async">
                   <div class="d-flex flex-column position-absolute media-icons">
-                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media">
+                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
                   </div>
                 </div>
                 <div class="d-flex justify-content-center f-16 fw-bold">
@@ -1126,12 +1142,12 @@
             <div class="item">
               <div class="card p-1 pb-3 team">
                 <div class="m-2 position-relative d-flex justify-content-center">
-                  <img src="./assets/team members/Group 20031.png" alt="image" class="d-block img-fluid">
+                  <img src="./assets/team members/Group 20031.png" alt="image" class="d-block img-fluid" loading="lazy" decoding="async">
                   <div class="d-flex flex-column position-absolute media-icons">
-                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media">
+                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
                   </div>
                 </div>
                 <div class="d-flex justify-content-center f-16 fw-bold">
@@ -1145,12 +1161,12 @@
             <div class="item">
               <div class="card p-1 pb-3 team">
                 <div class="m-2 position-relative d-flex justify-content-center">
-                  <img src="./assets/team members/Group 20029 (1).png" alt="image" class="d-block img-fluid">
+                  <img src="./assets/team members/Group 20029 (1).png" alt="image" class="d-block img-fluid" loading="lazy" decoding="async">
                   <div class="d-flex flex-column position-absolute media-icons">
-                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media">
+                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
                   </div>
                 </div>
                 <div class="d-flex justify-content-center f-16 fw-bold">
@@ -1164,12 +1180,12 @@
             <div class="item">
               <div class="card p-1 pb-3 team">
                 <div class="m-2 position-relative d-flex justify-content-center">
-                  <img src="./assets/team members/Group 20028 (1).png" alt="image" class="d-block img-fluid">
+                  <img src="./assets/team members/Group 20028 (1).png" alt="image" class="d-block img-fluid" loading="lazy" decoding="async">
                   <div class="d-flex flex-column position-absolute media-icons">
-                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media">
+                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
                   </div>
                 </div>
                 <div class="d-flex justify-content-center f-16 fw-bold">
@@ -1183,12 +1199,12 @@
             <div class="item">
               <div class="card p-1 pb-3 team">
                 <div class="m-2 position-relative d-flex justify-content-center">
-                  <img src="./assets/team members/Group 20030.png" alt="image" class="d-block img-fluid">
+                  <img src="./assets/team members/Group 20030.png" alt="image" class="d-block img-fluid" loading="lazy" decoding="async">
                   <div class="d-flex flex-column position-absolute media-icons">
-                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media">
+                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
                   </div>
                 </div>
                 <div class="d-flex justify-content-center f-16 fw-bold">
@@ -1202,12 +1218,12 @@
             <div class="item">
               <div class="card p-1 pb-3 team">
                 <div class="m-2 position-relative d-flex justify-content-center">
-                  <img src="./assets/team members/Group 20031.png" alt="image" class="d-block img-fluid">
+                  <img src="./assets/team members/Group 20031.png" alt="image" class="d-block img-fluid" loading="lazy" decoding="async">
                   <div class="d-flex flex-column position-absolute media-icons">
-                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media">
+                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
                   </div>
                 </div>
                 <div class="d-flex justify-content-center f-16 fw-bold">
@@ -1221,12 +1237,12 @@
             <div class="item">
               <div class="card p-1 pb-3 team">
                 <div class="m-2 position-relative d-flex justify-content-center">
-                  <img src="./assets/team members/Group 20029 (1).png" alt="image" class="d-block img-fluid">
+                  <img src="./assets/team members/Group 20029 (1).png" alt="image" class="d-block img-fluid" loading="lazy" decoding="async">
                   <div class="d-flex flex-column position-absolute media-icons">
-                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media">
+                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
                   </div>
                 </div>
                 <div class="d-flex justify-content-center f-16 fw-bold">
@@ -1240,12 +1256,12 @@
             <div class="item">
               <div class="card p-1 pb-3 team">
                 <div class="m-2 position-relative d-flex justify-content-center">
-                  <img src="./assets/team members/Group 20028 (1).png" alt="image" class="d-block img-fluid">
+                  <img src="./assets/team members/Group 20028 (1).png" alt="image" class="d-block img-fluid" loading="lazy" decoding="async">
                   <div class="d-flex flex-column position-absolute media-icons">
-                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media">
+                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
                   </div>
                 </div>
                 <div class="d-flex justify-content-center f-16 fw-bold">
@@ -1259,12 +1275,12 @@
             <div class="item">
               <div class="card p-1 pb-3 team">
                 <div class="m-2 position-relative d-flex justify-content-center">
-                  <img src="./assets/team members/Group 20030.png" alt="image" class="d-block img-fluid">
+                  <img src="./assets/team members/Group 20030.png" alt="image" class="d-block img-fluid" loading="lazy" decoding="async">
                   <div class="d-flex flex-column position-absolute media-icons">
-                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media">
+                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
                   </div>
                 </div>
                 <div class="d-flex justify-content-center f-16 fw-bold">
@@ -1278,12 +1294,12 @@
             <div class="item">
               <div class="card p-1 pb-3 team">
                 <div class="m-2 position-relative d-flex justify-content-center">
-                  <img src="./assets/team members/Group 20031.png" alt="image" class="d-block img-fluid">
+                  <img src="./assets/team members/Group 20031.png" alt="image" class="d-block img-fluid" loading="lazy" decoding="async">
                   <div class="d-flex flex-column position-absolute media-icons">
-                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media">
+                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
                   </div>
                 </div>
                 <div class="d-flex justify-content-center f-16 fw-bold">
@@ -1297,12 +1313,12 @@
             <div class="item">
               <div class="card p-1 pb-3 team">
                 <div class="m-2 position-relative d-flex justify-content-center">
-                  <img src="./assets/team members/Group 20029 (1).png" alt="image" class="d-block img-fluid">
+                  <img src="./assets/team members/Group 20029 (1).png" alt="image" class="d-block img-fluid" loading="lazy" decoding="async">
                   <div class="d-flex flex-column position-absolute media-icons">
-                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media">
+                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
                   </div>
                 </div>
                 <div class="d-flex justify-content-center f-16 fw-bold">
@@ -1316,12 +1332,12 @@
             <div class="item">
               <div class="card p-1 pb-3 team">
                 <div class="m-2 position-relative d-flex justify-content-center">
-                  <img src="./assets/team members/Group 20028 (1).png" alt="image" class="d-block img-fluid">
+                  <img src="./assets/team members/Group 20028 (1).png" alt="image" class="d-block img-fluid" loading="lazy" decoding="async">
                   <div class="d-flex flex-column position-absolute media-icons">
-                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media">
+                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
                   </div>
                 </div>
                 <div class="d-flex justify-content-center f-16 fw-bold">
@@ -1335,12 +1351,12 @@
             <div class="item">
               <div class="card p-1 pb-3 team">
                 <div class="m-2 position-relative d-flex justify-content-center">
-                  <img src="./assets/team members/Group 20030.png" alt="image" class="d-block img-fluid">
+                  <img src="./assets/team members/Group 20030.png" alt="image" class="d-block img-fluid" loading="lazy" decoding="async">
                   <div class="d-flex flex-column position-absolute media-icons">
-                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media">
+                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
                   </div>
                 </div>
                 <div class="d-flex justify-content-center f-16 fw-bold">
@@ -1354,12 +1370,12 @@
             <div class="item">
               <div class="card p-1 pb-3 team">
                 <div class="m-2 position-relative d-flex justify-content-center">
-                  <img src="./assets/team members/Group 20031.png" alt="image" class="d-block img-fluid">
+                  <img src="./assets/team members/Group 20031.png" alt="image" class="d-block img-fluid" loading="lazy" decoding="async">
                   <div class="d-flex flex-column position-absolute media-icons">
-                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media">
-                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media">
+                    <img src="./assets/Media-icons/Group 19965.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19966.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19968 (1).png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
+                    <img src="./assets/Media-icons/Group 19969.png" alt="image" class="img-fluid media" loading="lazy" decoding="async" width="25" height="25">
                   </div>
                 </div>
                 <div class="d-flex justify-content-center f-16 fw-bold">
@@ -1389,7 +1405,7 @@
         <div class="col-12 col-lg-6">
           <div class="dp-bg rounded-4 p-3 mx-2 h-100">
             <div class="rounded-pill bg-danger wid-fit text-center py-1 px-3 my-auto text-white fw-500">
-              <img src="./assets/discover icn.png" alt="" class="dp-icon img-fluid"> Customized Strategies Tailored to
+              <img src="./assets/discover icn.png" alt="" class="dp-icon img-fluid" loading="lazy" decoding="async" width="110" height="115"> Customized Strategies Tailored to
               Your Business
             </div>
             <div>
@@ -1404,7 +1420,7 @@
         <div class="col-12 col-lg-6">
           <div class="dp-bg rounded-4 p-3 mx-2 h-100">
             <div class="rounded-pill bg-danger wid-fit text-center py-1 px-3 my-auto text-white fw-500">
-              <img src="./assets/design icn.png" alt="" class="dp-icon img-fluid"> Experienced Team of Experts
+              <img src="./assets/design icn.png" alt="" class="dp-icon img-fluid" loading="lazy" decoding="async" width="100" height="115"> Experienced Team of Experts
             </div>
             <div>
               <p class="text-justify mt-3">
@@ -1418,7 +1434,7 @@
         <div class="col-12 col-lg-6">
           <div class="dp-bg rounded-4 p-3 mx-2 h-100">
             <div class="rounded-pill bg-danger wid-fit text-center py-1 px-3 my-auto text-white fw-500">
-              <img src="./assets/dev icn.png" alt="" class="dp-icon img-fluid"> Proven Track Record of Success
+              <img src="./assets/dev icn.png" alt="" class="dp-icon img-fluid" loading="lazy" decoding="async" width="31" height="28"> Proven Track Record of Success
             </div>
             <div>
               <p class="text-justify mt-3">
@@ -1432,7 +1448,7 @@
         <div class="col-12 col-lg-6">
           <div class="dp-bg rounded-4 p-3 mx-2 h-100">
             <div class="rounded-pill bg-danger wid-fit text-center py-1 px-3 my-auto text-white fw-500">
-              <img src="./assets/testing icn.png" alt="" class="dp-icon img-fluid"> Long-Term Partnership Approach
+              <img src="./assets/testing icn.png" alt="" class="dp-icon img-fluid" loading="lazy" decoding="async" width="33" height="30"> Long-Term Partnership Approach
             </div>
             <div>
               <p class="text-justify mt-3">
@@ -1454,24 +1470,24 @@
       <div class="row">
         <div class="col-12 col-lg-4">
           <h2 class="mt-5 fs-2 fw-bolder" data-aos="zoom-out-right">Together, let's <br>develop something
-            <br>intriguing.<img src="./assets/lit.gif" alt="lit.gif" class="img-fluid lit">
+            <br>intriguing.<img src="./assets/lit.gif" alt="lit.gif" class="img-fluid lit" loading="lazy" decoding="async" width="150" height="150">
           </h2>
         </div>
         <div class="col-12 col-lg-8" data-aos="zoom-out-left" data-aos-delay="200" data-aos-duration="400">
           <div class="card p-5 team my-form">
             <div class="d-flex mt-2 fw-normal">
-              Hello! My name is <input type="text" class="mx-2 w-25 input" placeholder="your full name"> and i
+              Hello! My name is <input type="text" class="mx-2 w-25 input" placeholder="your full name" aria-label="Your full name"> and i
               want to discuss a potential project.
             </div>
             <div class="d-flex mt-2 fw-normal">
-              You can email me at <input type="email" class="mx-2 w-25 input" placeholder="your@email.com"> or Reach me
-              on <input type="tel" class="mx-2 w-25 input" placeholder="your phone number">.
+              You can email me at <input type="email" class="mx-2 w-25 input" placeholder="your@email.com" aria-label="Your email address"> or Reach me
+              on <input type="tel" class="mx-2 w-25 input" placeholder="your phone number" aria-label="Your phone number">.
             </div>
             <div class="d-flex mt-2 fw-normal">
               Here are some details about My Project:
             </div>
             <div class="d-flex mt-2 fw-normal">
-              <input class="input w-100" placeholder="My Project is about..."></input>
+              <input class="input w-100" placeholder="My Project is about..." aria-label="Project details">
             </div>
             <div class="d-flex mt-2 fw-normal text-primary">
               Im Intrested in (Select one or more)
@@ -1508,10 +1524,10 @@
           </div>
           <div class="card my-form-mb">
             <form action="https://formspree.io/f/xayrrzvb" method="POST">
-              <input type="text" class="form-control m-2" placeholder="Name" name="Name">
-              <input type="text" class="form-control m-2" placeholder="E-Mail Id" name="Email">
-              <input type="text" class="form-control m-2" placeholder="Phone Number" name="Number">
-              <select class="form-control m-2" name="Services">
+              <input type="text" class="form-control m-2" placeholder="Name" name="Name" aria-label="Name">
+              <input type="email" class="form-control m-2" placeholder="E-Mail Id" name="Email" aria-label="Email ID">
+              <input type="tel" class="form-control m-2" placeholder="Phone Number" name="Number" aria-label="Phone number">
+              <select class="form-control m-2" name="Services" aria-label="Service of interest">
                 <option value="">Choose your Intrest</option>
                 <option value="SEO">SEO</option>
                 <option value="Branding">Branding</option>
@@ -1522,8 +1538,8 @@
                 <option value="Search Engine Optimization">Search Engine Optimization</option>
                 <option value="Mobile Application">Mobile Application</option>
               </select>
-              <textarea id="" cols="30" rows="5" placeholder="My Project is about" class="form-control m-2"
-                name="Message"></textarea>
+              <textarea cols="30" rows="5" placeholder="My Project is about" class="form-control m-2"
+                name="Message" aria-label="Project details"></textarea>
               <button type="submit" class="btn btn-sm w-50 fw-bold bg-white m-2 rounded-pill w-25 mt-3 f-14">Send
                 Request</button>
             </form>
@@ -1541,10 +1557,10 @@
       <div class="accordion my-3" id="regularAccordionRobots">
         <div class="accordion-item">
           <h3 id="regularHeadingFirst" class="accordion-header">
-            <a class="accordion-button fw-500" type="button" data-bs-toggle="collapse"
+            <button class="accordion-button fw-500" type="button" data-bs-toggle="collapse"
               data-bs-target="#regularCollapseFirst" aria-expanded="true" aria-controls="regularCollapseFirst">
-              1. What services does Rank You Higher offer in Dubai?
-            </a>
+              1. What services does Rank You Higher offer in Coimbatore?
+            </button>
           </h3>
           <div id="regularCollapseFirst" class="accordion-collapse collapse show" aria-labelledby="regularHeadingFirst"
             data-bs-parent="#regularAccordionRobots">
@@ -1557,10 +1573,10 @@
 
         <div class="accordion-item">
           <h3 class="accordion-header" id="regularHeadingSecond">
-            <a class="accordion-button fw-500 collapsed" type="button" data-bs-toggle="collapse"
+            <button class="accordion-button fw-500 collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#regularCollapseSecond" aria-expanded="false" aria-controls="regularCollapseSecond">
-              2. Why is Rank You Higher the Best Digital Marketing Company in Dubai?
-            </a>
+              2. Why is Rank You Higher the Best Digital Marketing Company in Coimbatore?
+            </button>
           </h3>
           <div id="regularCollapseSecond" class="accordion-collapse collapse" aria-labelledby="regularHeadingSecond"
             data-bs-parent="#regularAccordionRobots">
@@ -1572,10 +1588,10 @@
         </div>
         <div class="accordion-item">
           <h3 class="accordion-header" id="regularHeadingThird">
-            <a class="accordion-button fw-500 collapsed" type="button" data-bs-toggle="collapse"
+            <button class="accordion-button fw-500 collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#regularCollapseThird" aria-expanded="false" aria-controls="regularCollapseThird">
               3. Can Rank You Higher help improve my social media presence?
-            </a>
+            </button>
           </h3>
           <div id="regularCollapseThird" class="accordion-collapse collapse" aria-labelledby="regularHeadingThird"
             data-bs-parent="#regularAccordionRobots">
@@ -1586,13 +1602,13 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h3 class="accordion-header" id="regularHeadingThird">
-            <a class="accordion-button fw-500 collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#regularCollapseThird" aria-expanded="false" aria-controls="regularCollapseThird">
+          <h3 class="accordion-header" id="regularHeadingFourth">
+            <button class="accordion-button fw-500 collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#regularCollapseFourth" aria-expanded="false" aria-controls="regularCollapseFourth">
               4. What sets Rank You Higher apart from the other digital marketing companies?
-            </a>
+            </button>
           </h3>
-          <div id="regularCollapseThird" class="accordion-collapse collapse" aria-labelledby="regularHeadingThird"
+          <div id="regularCollapseFourth" class="accordion-collapse collapse" aria-labelledby="regularHeadingFourth"
             data-bs-parent="#regularAccordionRobots">
             <div class="accordion-body text-justify">
               It's pretty simple:
@@ -1606,13 +1622,13 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h3 class="accordion-header" id="regularHeadingThird">
-            <a class="accordion-button fw-500 collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#regularCollapseThird" aria-expanded="false" aria-controls="regularCollapseThird">
+          <h3 class="accordion-header" id="regularHeadingFifth">
+            <button class="accordion-button fw-500 collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#regularCollapseFifth" aria-expanded="false" aria-controls="regularCollapseFifth">
               5. How does Rank You Higher manage long-term client relationships?
-            </a>
+            </button>
           </h3>
-          <div id="regularCollapseThird" class="accordion-collapse collapse" aria-labelledby="regularHeadingThird"
+          <div id="regularCollapseFifth" class="accordion-collapse collapse" aria-labelledby="regularHeadingFifth"
             data-bs-parent="#regularAccordionRobots">
             <div class="accordion-body text-justify">
               We care about the vision of your business and continue to support it through constant one-on-one advice
@@ -1625,118 +1641,18 @@
         </div>
       </div>
   </section>
+  </main>
+
   <?php include 'footer.php'; ?>
 
-  <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <!-- jQuery script for image visibility -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="./script.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        // Check if the target elements are visible
-        $('[target]').each(function () {
-          var targetId = $(this).attr('target');
-          var isVisible = isElementInViewport($(this));
-
-          $('#' + targetId).css({
-            'background-color': isVisible ? 'crimson' : '',
-            'color': isVisible ? 'white' : ''
-          });
-        });
-      });
-
-      // Function to check if an element is in the viewport
-      function isElementInViewport(elem) {
-        var rect = elem[0].getBoundingClientRect();
-        return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-      }
-    });
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script>
-    $(function () {
-      // Initialize Owl Carousel
-      var owl1 = $(".owl-carousel.owl-carousel-1");
-      owl1.owlCarousel({
-        items: 3,
-        margin: 10,
-        loop: true,
-        nav: true,
-        navText: ['<button class="owl-prev bg-danger text-white rounded-pill"><i class="fas fa-chevron-left"></i></button>', '<button class="owl-next bg-danger text-white rounded-pill"><i class="fas fa-chevron-right"></i></button>'],
-        responsive: {
-          0: {
-            items: 1
-          },
-          768: {
-            items: 2
-          },
-          769: {
-            items: 3
-          }
-        }
-      });
-
-      var owl2 = $(".owl-carousel.owl-carousel-2");
-      owl2.owlCarousel({
-        items: 3,
-        margin: 10,
-        loop: true,
-        nav: true,
-        navText: ['<button class="owl-prev bg-danger text-white rounded-pill"><i class="fas fa-chevron-left"></i></button>', '<button class="owl-next bg-danger text-white rounded-pill"><i class="fas fa-chevron-right"></i></button>'],
-        responsive: {
-          0: {
-            items: 1
-          },
-          768: {
-            items: 2
-          },
-          769: {
-            items: 3
-          }
-        }
-      });
-      var owl3 = $(".owl-carousel.owl-carousel-3");
-      owl3.owlCarousel({
-        items: 4,
-        margin: 10,
-        loop: true,
-        nav: true,
-        navText: ['<button class="owl-prev bg-danger text-white rounded-pill"><i class="fas fa-chevron-left"></i></button>', '<button class="owl-next bg-danger text-white rounded-pill"><i class="fas fa-chevron-right"></i></button>'],
-        responsive: {
-          0: {
-            items: 1
-          },
-          768: {
-            items: 2
-          },
-          769: {
-            items: 4
-          }
-        }
-      });
-
-      // Scroll Event
-      $(window).scroll(function () {
-        // Calculate the scroll position
-        var scrollTop = $(this).scrollTop();
-        // Trigger Owl Carousel scroll
-        owl1.trigger('to.owl.carousel', [Math.floor(scrollTop / 900)]);
-        owl2.trigger('to.owl.carousel', [Math.floor(scrollTop / 900)]);
-        owl3.trigger('to.owl.carousel', [Math.floor(scrollTop / 900)]);
-      });
-    });
-  </script>
+  <!-- Single copy of each library, deferred so they never block rendering.
+       Deferred scripts run in document order: jQuery -> AOS -> Owl -> app code.
+       Bootstrap's JS bundle is loaded (deferred) by the navigation include. -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
+  <script src="./script.js?v=<?php echo @filemtime(__DIR__ . '/script.js'); ?>" defer></script>
+  <script src="./init.js?v=<?php echo @filemtime(__DIR__ . '/init.js'); ?>" defer></script>
 </body>
 
 </html>

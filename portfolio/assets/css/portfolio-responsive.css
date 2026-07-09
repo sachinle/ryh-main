@@ -8,8 +8,17 @@
         height: 450px;             /* Height of the circle */
         background-color: #D1DFFD; /* Background color */
         border-radius: 50%;     
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
         overflow: hidden;
+        z-index: 1;
+    }
+    .ellipse {
+        width: 450px;
+        height: 450px;
+        position: relative;
         margin: 0 auto;
     }
     .content-box {
@@ -49,9 +58,12 @@
     height: 350px;             /* Height of the circle */
     background-color: #D1DFFD; /* Background color */
     border-radius: 50%;     
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     overflow: hidden;
-    margin: 0 auto;
+    z-index: 1;
 }
 .content-box {
     position: absolute;
@@ -72,4 +84,10 @@
 .csd{
     margin-top:0px !important;
 }
+}
+.ellipse {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    margin: 0 auto;
 }

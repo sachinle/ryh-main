@@ -1,68 +1,45 @@
-AOS.init();
+// once: animate a single time and stay visible (don't re-hide on scroll-up)
+// offset 0 + top-bottom anchor: reveal as soon as the element enters the viewport
+AOS.init({ once: true, duration: 500, offset: 0, anchorPlacement: 'top-bottom' });
 
-// Add jQuery code here
-$(document).ready(function () {
-  $(window).scroll(function () {
-    // Check if the second column content is completely scrolled
-    var windowHeight = $(window).height();
-    var documentHeight = $(document).height();
-    var scrollTop = $(window).scrollTop();
-    var footerOffset = documentHeight - windowHeight;
+// Single passive, rAF-throttled scroll handler for the sticky columns and card scaling.
+// Reads are batched before writes to avoid forced reflow / layout thrashing.
+(function () {
+  var stickyCols = document.querySelectorAll('.sticky-column');
+  var stickyTitles = document.querySelectorAll('.sticky-column-title');
+  var cards = document.querySelectorAll('.myCard');
+  var ticking = false;
 
-    if (scrollTop >= footerOffset) {
-      $('.sticky-column').removeClass('position-sticky');
-    } else {
-      $('.sticky-column').addClass('position-sticky');
+  function onScroll() {
+    ticking = false;
+    var vh = window.innerHeight;
+
+    // --- reads ---
+    var atBottom = (window.scrollY + vh) >= (document.documentElement.scrollHeight - 1);
+    var cardBottoms = [];
+    for (var i = 0; i < cards.length; i++) {
+      cardBottoms.push(cards[i].getBoundingClientRect().bottom);
     }
-  });
-});
 
-// Add jQuery code here
-$(document).ready(function () {
-  $(window).scroll(function () {
-    // Check if the second column content is completely scrolled
-    var windowHeight = $(window).height();
-    var documentHeight = $(document).height();
-    var scrollTop = $(window).scrollTop();
-    var footerOffset = documentHeight - windowHeight;
-
-    if (scrollTop >= footerOffset) {
-      $('.sticky-column-title').removeClass('position-sticky-title');
-    } else {
-      $('.sticky-column-title').addClass('position-sticky-title');
+    // --- writes ---
+    for (var c = 0; c < stickyCols.length; c++) {
+      stickyCols[c].classList.toggle('position-sticky', !atBottom);
     }
-  });
-});
-
-// Get all card elements
-const cards = document.querySelectorAll('.myCard');
-
-// Function to handle scroll events
-function handleScroll() {
-  // Iterate through all cards
-  cards.forEach((card) => {
-    // Check if the card is at the bottom of the screen
-    if (isCardAtBottom(card)) {
-      // Apply scaling if the card is at the bottom
-      card.classList.add('scaled-card');
-    } else {
-      // Remove scaling if the card is not at the bottom
-      card.classList.remove('scaled-card');
+    for (var t = 0; t < stickyTitles.length; t++) {
+      stickyTitles[t].classList.toggle('position-sticky-title', !atBottom);
     }
-  });
-}
+    for (var k = 0; k < cards.length; k++) {
+      cards[k].classList.toggle('scaled-card', cardBottoms[k] >= vh);
+    }
+  }
 
-// Function to check if the card is at the bottom of the screen
-function isCardAtBottom(card) {
-  const cardRect = card.getBoundingClientRect();
-  const windowHeight = window.innerHeight;
-  return cardRect.bottom >= windowHeight;
-}
+  window.addEventListener('scroll', function () {
+    if (!ticking) {
+      ticking = true;
+      window.requestAnimationFrame(onScroll);
+    }
+  }, { passive: true });
 
-// Attach the handleScroll function to the scroll event
-window.addEventListener('scroll', handleScroll);
-
-// Initial check for the card positions on page load
-handleScroll();
-
-// Wait for the document to be ready
+  window.addEventListener('load', onScroll);
+  onScroll();
+})();

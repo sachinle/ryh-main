@@ -307,24 +307,42 @@
     position: sticky;
     z-index: 5;
     top: 0;
-    color: #d9d9d9;
-    /* Adjust this value based on your needs */
+    /* #767676 passes WCAG AA contrast on white (4.5:1) while keeping the soft look */
+    color: #767676;
+}
+
+/* --- Accessibility: minimum touch-target sizes --- */
+.owl-nav button.owl-prev,
+.owl-nav button.owl-next {
+    min-width: 44px;
+    min-height: 44px;
+}
+
+footer a[href^="tel"],
+footer a[href^="mailto"] {
+    display: inline-block;
+    padding: 6px 0;
 }
 
 .myCard {
     margin: 50px 0;
-    padding: 50px 0;
-    height: 300px;
-    width: 500px;
-    /* Adjusted margin for better visibility */
-    transition: all 0.6s ease;
-    /* Added transition property */
+    width: 100%;
+    /* min-height forces the card open even though the empty Bootstrap .card flex
+       box would otherwise collapse; full width gives a wide box so background-size:
+       cover shows the whole showcase image (matches the live site). */
+    min-height: 330px;
+    height: 330px;
+    /* transition only transform (GPU-composited) — avoids non-composited animation warnings */
+    transition: transform 0.6s ease;
+    will-change: transform;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .scaled-card {
     transform: scale(1.2);
     margin: 100px 0;
-    padding: 50px 0;
 }
 
 .design .myCard:nth-child(1) {

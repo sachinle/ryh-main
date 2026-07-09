@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rank You Higher - Best Digital Marketing Company in Dubai</title>
+    <title>Rank You Higher - Best Digital Marketing Company in Coimbatore</title>
     <link rel="icon" type="image/x-icon" href="./assets/RYH LOGO White 01 (1) 2.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -57,7 +57,7 @@
                     <h2 class="fs-1 fw-bolder text-black">Who are we?</h2>
                     <h3 class="ddd">Dream . Digitise . Dominate</h3>
                     <p class="text-justify">
-                        Rank You Higher is a premier web development company in Dubai, dedicated to offering comprehensive digital solutions tailored to your unique business needs. Since our inception in 2018, we have been at the forefront of digital innovation, helping clients achieve substantial growth through precise and effective web development strategies.
+                        Rank You Higher is a premier web development company in Coimbatore, dedicated to offering comprehensive digital solutions tailored to your unique business needs. Since our inception in 2018, we have been at the forefront of digital innovation, helping clients achieve substantial growth through precise and effective web development strategies.
                     </p>
                     <p class="text-justify">
                         We are your one-stop solution for a complete digital journey, from initial concept to full-scale implementation. Our team excels in creating captivating websites, ensuring every aspect of your digital presence is strategically crafted to enhance brand awareness and reach.

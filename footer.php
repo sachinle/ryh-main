@@ -1,16 +1,13 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="semantic.css" />
-<link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="./responsive.css">
+<!-- Bootstrap, Font Awesome and the site stylesheets are already loaded by the
+     page <head> and the navigation include — not re-loaded here to avoid duplication. -->
 <footer>
   <div class="container-fluid">
     <div class="row m-2 m-lg-5">
       <div class="col-12 col-lg-3 p-md-3 d-md-flex flex-column align-items-center">
         <div class="d-flex justify-content-around flex-column">
           <div>
-            <img src="assets/ryh-logo.png" alt="ryh-logo.png" class="img-fluid d-block" width="75%">
+            <img src="assets/ryh-logo.png" alt="Rank You Higher logo" class="img-fluid d-block"
+              width="165" height="71" style="width:75%;height:auto" decoding="async">
           </div>
           <div class="fw-normal pt-4 pb-4 f-14 text-justify">
             We are Rank You Higher, a creative digital marketing agency with over six years of experience. We specialize
@@ -136,7 +133,8 @@
       </div>
       <div class="col-12 col-md-12 col-lg-3 p-md-3 d-flex justify-content-center my-3">
         <div class="position-relative foot-hover">
-          <img src="./assets/Rectangle 105.png" class="img-fluid foot-img" alt="Rectangle 105.png">
+          <img src="./assets/Rectangle 105.png" class="img-fluid foot-img" alt="RYH Education brochure preview"
+            width="188" height="205" loading="lazy" decoding="async">
           <div class="d-flex flex-column position-absolute foot-visible">
             <a class="btn btn-light rounded-pill text-danger text-decoration-none brochure f-16" href="./assets/RYH_EDUCATION_PDF_SEP 10.pdf" download="RYH_EDUCATION_Brochure.pdf">Brochure<i
                 class="ps-1 fa fa-download"></i></a>
@@ -165,4 +163,37 @@
       © 2024 Rankuhigher.
     </div>
   </div>
+
+  <script>
+      var url = 'https://whatsapp-chat-widget.web.app/whatsapp-chat-widget.js';
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = url;
+      var chatOptions = {
+        "buttonSetting":{
+          "ctaText":"",
+          "positionIsBottomRight":true,
+          "backgroundColor":"#37c968",
+          "borderRadius":40,
+        },
+        "widgetSetting":{
+          "companyName":"Rankuhigher",
+          "companySubTitle":"Grow your business",
+          "companyImg":"https://rankuhigher.in/assets/ryh-logo.png",
+          "phoneNumber":"919943920011",
+          "welcomeText":"Hi there!\nHow can I help you?",
+          "userSentText":"Hello, I have a question about your service regarding",
+          "showByDefault": true,
+          "ctaText":"Start chat",
+          "headerBackgroundColor":"#0a5f54",
+          "borderRadius":30,
+        }
+      };
+      script.onload = function() {
+          createWhatsappChatWidget(chatOptions);
+      };
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(script, firstScriptTag);
+    </script>
 </footer>

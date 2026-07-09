@@ -5,25 +5,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <—------- Primary Tag—------->
-    <title>Best Web Development Company in dubai - Rank You Higher</title>
-    <meta name="description" content="Rank you higher is the Best Web Development Company in dubai Our Web Developers Design and Develop Business Websites an Integral Aspect of Online Presence"/>     
+    <title>Best Web Development Company in Coimbatore - Rank You Higher</title>
+    <meta name="description" content="Rank you higher is the Best Web Development Company in Coimbatore Our Web Developers Design and Develop Business Websites an Integral Aspect of Online Presence"/>     
 
 <!-- <—------- Canonical Tag—-------> 
-    <link rel="canonical" href="https://rankuhigher.in/web-development-company-in-dubai"/>
+    <link rel="canonical" href="https://rankuhigher.in/web-development-company-in-Coimbatore"/>
 
 <!-- <—-------Open Graph/Facebook—------->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://rankuhigher.in/web-development-company-in-dubai"/>
-    <meta property="og:title" content="Best Web Development Company in dubai - Rank You Higher" />
+    <meta property="og:url" content="https://rankuhigher.in/web-development-company-in-Coimbatore"/>
+    <meta property="og:title" content="Best Web Development Company in Coimbatore - Rank You Higher" />
     <meta property="og:description"
-        content="Rank you higher is the Best Web Development Company in dubai Our Web Developers Design and Develop Business Websites an Integral Aspect of Online Presence" />
+        content="Rank you higher is the Best Web Development Company in Coimbatore Our Web Developers Design and Develop Business Websites an Integral Aspect of Online Presence" />
     <meta property="og:image" content="https://rankuhigher.in/assets/ryh-logo.png" />
 
     <!-- <—-------Twitter Card—------->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://rankuhigher.in/web-development-company-in-dubai”/>
-    <meta property="twitter:title" content="Best Web Development Company in dubai - Rank You Higher"/>
-    <meta property="twitter:description" content="Rank you higher is the Best Web Development Company in dubai Our Web Developers Design and Develop Business Websites an Integral Aspect of Online Presence" />
+    <meta property="twitter:url" content="https://rankuhigher.in/web-development-company-in-Coimbatore”/>
+    <meta property="twitter:title" content="Best Web Development Company in Coimbatore - Rank You Higher"/>
+    <meta property="twitter:description" content="Rank you higher is the Best Web Development Company in Coimbatore Our Web Developers Design and Develop Business Websites an Integral Aspect of Online Presence" />
     <meta property="twitter:image" content="https://rankuhigher.in/assets/ryh-logo.png" />
 
     <link rel="icon" type="image/x-icon" href="./assets/RYH LOGO White 01 (1) 2.png">
@@ -56,15 +56,15 @@
                 <div class="col-12 col-lg-6 p-4 p-lg-5 my-auto">
                     <h1 class="fw-500 display-6 display-lg-5">
                        Best  Web Development <br>
-                        <span style="color:#FF6309;">Company in Dubai</span>
+                        <span style="color:#FF6309;">Company in Coimbatore</span>
                     </h1>
                     <p class="text-secondary mt-3">
-                    Are you ready to improve your web presence? As a leading web development company in Dubai, we provide custom web development solutions that transform your unique ideas into stunning sites that engage and leave an impression. 
+                    Are you ready to improve your web presence? As a leading web development company in Coimbatore, we provide custom web development solutions that transform your unique ideas into stunning sites that engage and leave an impression. 
                     </p>
                 </div>
                 <div class="col-12 col-lg-6">
                     <img src="./assets/Service-pg/web-development/medium-shot-woman-working-laptop 1.png"
-                        alt="web development company in dubai" class="img-fluid d-block">
+                        alt="web development company in Coimbatore" class="img-fluid d-block">
                 </div>
             </div>
         </div>
@@ -76,10 +76,10 @@
                 <div class="col-12 col-lg-6">
                     <div class="h-100 mx-1 bg-grey app-services rounded-3 p-3 shadow">
                         <h2 class="fs-4 fw-500">
-                        Top Web Development Company In Dubai
+                        Top Web Development Company In Coimbatore
                         </h2>
                         <p class="text-justify"> 
-                        Rank You Higher is the best web development company in Dubai. We create exclusive, user-friendly, efficient websites to meet various business demands. From an e-commerce platform to a corporate website, we offer complete solutions using the most up-to-date technological tools to help you succeed online. 
+                        Rank You Higher is the best web development company in Coimbatore. We create exclusive, user-friendly, efficient websites to meet various business demands. From an e-commerce platform to a corporate website, we offer complete solutions using the most up-to-date technological tools to help you succeed online. 
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
@@ -88,7 +88,7 @@
                             Technologies Used
                         </h2>
                         <p class="text-justify">
-                        We use the newest tools and frameworks to ensure your web apps are creative, efficient, and adaptable. To stay up with technological advances, our team uses a combination of established and emerging tools to provide the best solutions. As a creative web development company in Dubai, we adhere to advancing innovation via technology.
+                        We use the newest tools and frameworks to ensure your web apps are creative, efficient, and adaptable. To stay up with technological advances, our team uses a combination of established and emerging tools to provide the best solutions. As a creative web development company in Coimbatore, we adhere to advancing innovation via technology.
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@
                     Why do we need a website?
                 </h2>
                 <p>
-                A website is a key component of modern business success. As the best web development company in Dubai, we provide customized website solutions that include simple to complicated designs based on your specific business needs.
+                A website is a key component of modern business success. As the best web development company in Coimbatore, we provide customized website solutions that include simple to complicated designs based on your specific business needs.
                 </p>
             </div>
             <div class="my-4 wd-steps">
@@ -161,7 +161,7 @@
                 Web Development Services<br> We Offer
             </h2>
             <div class="text-center fw-500 my-4">
-            Rank You Higher is a top web development company in Dubai that provides quality web app development services to meet companies' various demands. We focus on the clients' objectives and workflows to guarantee that our services meet their needs while also creating efficiency and growth.  
+            Rank You Higher is a top web development company in Coimbatore that provides quality web app development services to meet companies' various demands. We focus on the clients' objectives and workflows to guarantee that our services meet their needs while also creating efficiency and growth.  
             </div>
             <div class="row ">
                 <div class=" col-12 col-lg-4 mt-3">
@@ -170,7 +170,7 @@
                   alt="Static website.png" class="img-fluid d-block slide-icon">
                   <div class="mt-4 pt-3">
                                 <p class="fs-5 fw-bolder mb-1">Increase your search rankings </p>
-                                <p class="mb-0 text-justify">As the best web development company in Dubai, Rank You Higher focuses on improving your search ranking. Our skilled team will apply SEO best practices to optimize and make your site more appealing to the general public.  </p>
+                                <p class="mb-0 text-justify">As the best web development company in Coimbatore, Rank You Higher focuses on improving your search ranking. Our skilled team will apply SEO best practices to optimize and make your site more appealing to the general public.  </p>
                             </div>
                   </div>
                 </div>
@@ -190,7 +190,7 @@
                                     class="img-fluid d-block slide-icon">
                   <div class="mt-4 pt-3">
                                 <p class="fs-5 fw-bolder mb-1">Full Stack Development</p>
-                                <p class="mb-0 text-justify">Our full-stack solution includes both front-end and back-end development experience, ensuring all bases are covered when developing websites. As a popular web development company in Dubai, we offer end-to-end solutions for your business needs. </p>
+                                <p class="mb-0 text-justify">Our full-stack solution includes both front-end and back-end development experience, ensuring all bases are covered when developing websites. As a popular web development company in Coimbatore, we offer end-to-end solutions for your business needs. </p>
                             </div>
                   </div>
                 </div>
@@ -218,7 +218,7 @@
                         API Integration
                         </h2>
                         <p class="text-justify text-white">
-                        We offer API integration services to connect web applications and third-party services seamlessly. As the best web development company in Dubai, we see integration as the most important aspect of developing practical applications for today's business needs.
+                        We offer API integration services to connect web applications and third-party services seamlessly. As the best web development company in Coimbatore, we see integration as the most important aspect of developing practical applications for today's business needs.
                     </div>
                 </div>
             </div>
@@ -282,7 +282,7 @@
                 Why Choose us ?
             </h2>
             <p class="text-justify my-3">
-            Choosing Rank You Higher as your trusted web development company in Dubai means working with a team dedicated to excellence and customer satisfaction. Our unique value offer is based on a client-centric strategy in which we prioritize knowing your business goals and deliver customized solutions that exceed expectations. We ensure your web applications are technically sound and aesthetically pleasing to your brand's vision. 
+            Choosing Rank You Higher as your trusted web development company in Coimbatore means working with a team dedicated to excellence and customer satisfaction. Our unique value offer is based on a client-centric strategy in which we prioritize knowing your business goals and deliver customized solutions that exceed expectations. We ensure your web applications are technically sound and aesthetically pleasing to your brand's vision. 
             </p>
         </div>
     </section>
@@ -372,7 +372,7 @@
             <a class="accordion-button fw-500" type="button" data-bs-toggle="collapse"
               data-bs-target="#regularCollapseFirst" aria-expanded="true"
               aria-controls="regularCollapseFirst">
-              1. What makes Rank You Higher the best web development company in Dubai?
+              1. What makes Rank You Higher the best web development company in Coimbatore?
             </a>
           </h3>
           <div id="regularCollapseFirst" class="accordion-collapse collapse show"

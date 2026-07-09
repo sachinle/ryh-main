@@ -1,0 +1,90 @@
+# ============================================================
+#  Rank You Higher - Performance & Security configuration
+#  Addresses PageSpeed: "Use efficient cache lifetimes",
+#  text compression, and best-practice security headers.
+# ============================================================
+
+# ----- 1. GZIP / Deflate text compression --------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+    AddOutputFilterByType DEFLATE application/javascript application/x-javascript text/javascript
+    AddOutputFilterByType DEFLATE application/json application/ld+json
+    AddOutputFilterByType DEFLATE application/xml application/rss+xml
+    AddOutputFilterByType DEFLATE image/svg+xml application/x-font-ttf application/font-woff application/font-woff2
+</IfModule>
+
+# ----- 2. Brotli (if available, even better than gzip) -------
+<IfModule mod_brotli.c>
+    AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css
+    AddOutputFilterByType BROTLI_COMPRESS application/javascript text/javascript
+    AddOutputFilterByType BROTLI_COMPRESS application/json application/ld+json
+    AddOutputFilterByType BROTLI_COMPRESS image/svg+xml
+</IfModule>
+
+# ----- 3. Browser caching (efficient cache lifetimes) --------
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # Images & media - 1 year (immutable assets)
+    ExpiresByType image/jpeg            "access plus 1 year"
+    ExpiresByType image/png             "access plus 1 year"
+    ExpiresByType image/gif             "access plus 1 year"
+    ExpiresByType image/webp            "access plus 1 year"
+    ExpiresByType image/svg+xml         "access plus 1 year"
+    ExpiresByType image/x-icon          "access plus 1 year"
+    ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
+
+    # Fonts - 1 year
+    ExpiresByType font/woff             "access plus 1 year"
+    ExpiresByType font/woff2            "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/x-font-ttf "access plus 1 year"
+
+    # CSS & JS - 1 year (versioned via filename/query when changed)
+    ExpiresByType text/css              "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/javascript       "access plus 1 year"
+
+    # PDF & documents - 1 month
+    ExpiresByType application/pdf       "access plus 1 month"
+
+    # HTML - short (content can change)
+    ExpiresByType text/html             "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+    # Long-lived immutable cache for static assets
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico|woff|woff2|ttf|css|js)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    # HTML should always revalidate
+    <FilesMatch "\.(html|php)$">
+        Header set Cache-Control "no-cache, must-revalidate"
+    </FilesMatch>
+
+    # ----- 4. Security / Best-Practices headers --------------
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Cross-Origin-Opener-Policy "same-origin"
+    # Remove identifying header
+    Header unset X-Powered-By
+</IfModule>
+
+# ----- 5. Keep-Alive -----------------------------------------
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+</IfModule>
+
+# ----- 6. Serve WebP when the browser supports it ------------
+# If a .webp twin exists next to a .png/.jpg, serve it automatically
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_ACCEPT} image/webp
+    RewriteCond %{REQUEST_FILENAME} (.+)\.(jpe?g|png)$
+    RewriteCond %1.webp -f
+    RewriteRule (.+)\.(jpe?g|png)$ $1.webp [T=image/webp,E=accept:1,L]
+</IfModule>
+<IfModule mod_headers.c>
+    Header append Vary Accept env=accept
+</IfModule>

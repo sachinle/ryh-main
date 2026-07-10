@@ -1,0 +1,6 @@
+# Large GIF files
+assets/*.gif
+
+# Or ignore only specific files
+assets/original-f60997b885afea2277a0e9d06894e74b-_1_.gif
+assets/original-634eb35b056d1a58722ca1f1a0c37522.gif
